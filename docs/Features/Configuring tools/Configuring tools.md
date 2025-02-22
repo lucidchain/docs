@@ -50,8 +50,8 @@ When configuring Redmine it is very important to do something similar to what is
 1. Authenticated as an admin user, go to Administration > Configuration > API.
 2. Click in Enable REST web Service.
 3. Click "save".
-4. Go to Administration > Configuration > Tickets.
-5. Click in "Allow assign issues to groups".
+4. Go to Administration > Settings > Issue Tracking.
+5. Click in "Allow issue assignment to groups".
 6. Click in "save".
 
 Now you have to simply fill the form:

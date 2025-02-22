@@ -6,6 +6,8 @@ In this section you will learn how to export your Redmine and/or ITop service ch
 
 If you want to eport your service chain from Redmine or Itop, you can do it by clicking on Redmine or ITop logo and selecting "export" option in the modal.
 
+## Exportation
+
 After that, you will be asked about your service chain type. Select "faceted" or "state" depending on the case. You will be able to see your chain represented in a mermaid grpah. If you see something like "Max size exceeded" do not panic. It is because you chain is too big to be represented in mermaid. We are very sorry for that but this is something we cannot fix because it is a mermaid limitation.
 
 :::tip
