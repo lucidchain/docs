@@ -16,7 +16,7 @@ If you want to import your service chain into Redmine or Itop, you can do it by 
 
 ## Chain importation
 
-You will be redirected to import page. There you can upload a yaml file with your service chain configured following SCModel. If any validations errors are present, you will recieve a message, explaining them and usually also giving its location.
+You will be redirected to import page. There you can upload a yaml file with your service chain configured following SCModel. If any validations errors are present, you will recieve a message, explaining them and usually also giving its location. If you want to know more about these yaml files or SCModels, we recomend checking [creating my service chain](../Creating%20my%20service%20chain/Creating%20my%20service%20chain.md) section.
 
 <div align="center">
 ![Validation errors 1](./../../../static/img/import/validationErrors1.png)  

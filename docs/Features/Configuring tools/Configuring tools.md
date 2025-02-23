@@ -23,7 +23,7 @@ If you are trying to connect your tool to Lucid Chain, you have to click on the 
 
 When configuring ITop you will need first to have an user with **"Administrator"** and **"REST services user"** profiles. You can verify this in *"administration"* **>** *"User Accounts"* **>** Click in the admin user you want to use for Lucid Chain Wizard **>** *Profiles*.
 
-If you want to configure your profiles and add them to a new user. Follow theese steps:
+If you want to configure your profiles and add them to a new user. Follow these steps:
 
 1. Create an user.
 2. Go to *"administration"* **>** *"user accounts"*.

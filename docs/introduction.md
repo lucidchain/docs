@@ -12,7 +12,7 @@ Lucid chain wizard is a project designed to support and integrate SCModel into I
 
 ## What is a service chain
 
-Service chains are relationships between organizations and the services they provide or pay for. Theese services usually have SLAs, which ensure some TTO and TTR compliance. You can learn more about service chains and about SCModel in [lucidchain specs](http://lucidchain.specs.governify.io/)
+Service chains are relationships between organizations and the services they provide or pay for. These services usually have SLAs, which ensure some TTO and TTR compliance. You can learn more about service chains and about SCModel in [lucidchain specs](http://lucidchain.specs.governify.io/)
 
 ## ITop
 

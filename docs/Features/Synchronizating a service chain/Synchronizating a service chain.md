@@ -43,6 +43,8 @@ If you want to synchronice your current service chain in Redmine or Itop, you ca
 **Figure 1:** *Lucid Chain available features modal.*
 </div>
 
+## Chain synchronization
+
 You will be redirected to synchronization page. You will be asked about choosing your service chain type. This will make Lucid Chain export your current chain and showing it to you. You will be able to see your current chain represented in a mermaid grpah.
 
 <div align="center">
@@ -51,6 +53,7 @@ You will be redirected to synchronization page. You will be asked about choosing
 </div>
 
 If everything goes right, a message like ***"Service chain retrieved. Select a file to start syncronization Current service chain"*** will be displayed. You can upload a yaml file with your service chain configured following SCModel. If any validations errors are present, you will receive a message explaining them and usually also giving its location.
+If you want to know more about these yaml files or SCModels, we recomend checking [creating my service chain](../Creating%20my%20service%20chain/Creating%20my%20service%20chain.md) section.
 
 <div align="center">
 ![Validation errors 1](./../../../static/img/import/validationErrors1.png)  

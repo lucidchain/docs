@@ -13,7 +13,7 @@ If you want to export your service chain from Redmine or Itop, you can do it by 
 **Figure 1:** *Lucid Chain available features modal.*
 </div>
 
-## Exportation
+## Chain exportation
 
 After that, you will be asked about your service chain type. Select *"faceted"* or *"state"* depending on the case. You will be able to see your chain represented in a mermaid grpah.
 
