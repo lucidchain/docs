@@ -36,4 +36,9 @@ You can decide whether your data is going to be anonimized or not by selecting t
 
 :::
 
-Whenever you are ready you can click in *"export"* button and Lucid Chain will start working on that. After some seconds you will be able to download you service chain in yaml compliant with SCModel. You can choose the file's name and also its location. By default, it will be in ***"Donwloads"*** folder and it will be named ***"export.yaml"***.
+Whenever you are ready you can click in ***export*** button and Lucid Chain will start working on that. After some seconds you will be able to download you service chain in yaml compliant with SCModel. You can choose the file's name and also its location. By default, it will be in ***"Donwloads"*** folder and it will be named ***"export.yaml"***.
+
+<div align="center">
+![Export finished](./../../../static/img/export/exportSuccessful.png)  
+**Figure 4:** *Export result.*
+</div>
