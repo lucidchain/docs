@@ -33,7 +33,7 @@ You will be redirected to a yaml editor page. Here you will see more blue button
 This green button analyses the yaml editor content following SCModel rules. If the service chain is valid, a mermaid diagram of it will be displayed.
 
 <Alert>
-If you see something in the mermaid graph like *"Max size exceeded"* do not panic. It is because your chain is too big to be represented in mermaid. We are very sorry for that but this is something we cannot fix because it is a mermaid limitation.
+If you see something in the mermaid graph like ***"Max size exceeded"*** do not panic. It is because your chain is too big to be represented in mermaid. We are very sorry for that but this is something we cannot fix because it is a mermaid limitation.
 </Alert>
 
 ## Import an existing yaml button

@@ -23,7 +23,7 @@ After that, you will be asked about your service chain type. Select *"faceted"* 
 </div>
 
 <Alert>
-If you see something in the mermaid graph like *"Max size exceeded"* do not panic. It is because your chain is too big to be represented in mermaid. We are very sorry for that but this is something we cannot fix because it is a mermaid limitation.
+If you see something in the mermaid graph like ***"Max size exceeded"*** do not panic. It is because your chain is too big to be represented in mermaid. We are very sorry for that but this is something we cannot fix because it is a mermaid limitation.
 </Alert>
 
 :::tip

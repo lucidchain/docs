@@ -40,7 +40,7 @@ Once you have selected a valid file, you can see a mermaid graph representing yo
 </div>
 
 <Alert>
-If you see something in the mermaid graph like *"Max size exceeded"* do not panic. It is because your chain is too big to be represented in mermaid. We are very sorry for that but this is something we cannot fix because it is a mermaid limitation.
+If you see something in the mermaid graph like ***"Max size exceeded"*** do not panic. It is because your chain is too big to be represented in mermaid. We are very sorry for that but this is something we cannot fix because it is a mermaid limitation.
 </Alert>
 
 If everything looks good, click the ***import*** button and Lucid Chain will start importing your service chain. If anything goes wrong during the process, any object created in between will be deleted. This is because **Lucid Chain importation is transactional**.

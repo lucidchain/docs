@@ -82,7 +82,7 @@ Once you have selected a valid file, you can see a mermaid graph representing yo
 </div>
 
 <Alert>
-If you see something in the mermaids graphs like *"Max size exceeded"* do not panic. It is because your chain is too big to be represented in mermaid. We are very sorry for that but this is something we cannot fix because it is a mermaid limitation.
+If you see something in the mermaids graphs like ***"Max size exceeded"*** do not panic. It is because your chain is too big to be represented in mermaid. We are very sorry for that but this is something we cannot fix because it is a mermaid limitation.
 </Alert>
 
 Now you will be able to see a lot of infromation. You can see both current and uploaded service chain simultaneously and a merged service chain with all the information. You can also see a ***Show detailed differences*** button. If you click on it, a detailed list of changes made to your service chain will be displayed. In every section, you can click and toggle information knowing which things have been deleted and added. You can click ***Hide differences*** to close this part of the screen.
