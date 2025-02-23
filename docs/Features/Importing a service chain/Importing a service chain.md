@@ -20,12 +20,12 @@ You will be redirected to import page. There you can upload a yaml file with you
 
 <div align="center">
 ![Validation errors 1](./../../../static/img/import/validationErrors1.png)  
-**Figure 2:** *Example of indentation errors*
+**Figure 2:** *Example of indentation errors.*
 </div>
 
 <div align="center">
 ![Validation errors 3](./../../../static/img/import/validationErrors2.png)  
-**Figure 3:** *Example of SCModel validation errors*
+**Figure 3:** *Example of SCModel validation errors.*
 </div>
 
 <Alert>
@@ -36,7 +36,7 @@ Once you have selected a valid file, you can see a mermaid graph representing yo
 
 <div align="center">
 ![Import information](./../../../static/img/import/importInfo.png)  
-**Figure 4:** *Import info.*
+**Figure 4:** *Import information summary.*
 </div>
 
 <Alert>
@@ -47,7 +47,7 @@ If everything looks good, click the ***import*** button and Lucid Chain will sta
 
 <div align="center">
 ![Import process](./../../../static/img/import/importing.png)  
-**Figure 5:** *Import in progress*
+**Figure 5:** *Import in progress.*
 </div>
 
 Once you have clicked the button and you have waited, you will see a message saying that everything was imported.
@@ -56,7 +56,7 @@ Once you have clicked the button and you have waited, you will see a message say
 
 <div align="center">
 ![Import finished](./../../../static/img/import/importSuccessful.png)  
-**Figure 6:** *Importation result*
+**Figure 6:** *Importation result.*
 </div>
 
 <Disclaimer>

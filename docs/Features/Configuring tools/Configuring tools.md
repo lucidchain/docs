@@ -25,7 +25,7 @@ When configuring ITop you will need first to have an user with **"Administrator"
 
 If you want to configure your profiles and add them to a new user. Follow theese steps:
 
-1. Create an user
+1. Create an user.
 2. Go to *"administration"* **>** *"user accounts"*.
 3. Click in *"admin"* or the superuser you created.
 4. Click in *"profiles"*, and then click the pencil button to edit.
@@ -41,7 +41,7 @@ Once REST Services and administrator profiles have been given to your user, you 
 
 + <u>***Port:***</u> You have to specify here the port where your ITop is listening.
 
-+ <u>***API:***</u> You have to specify here the API route. Please verify that you do not include host, port or version in this parameter. A usefull value can be "/webservices/rest.php"
++ <u>***API:***</u> You have to specify here the API route. Please verify that you do not include host, port or version in this parameter. ***A commonly right value is "/webservices/rest.php"***.
 
 + <u>***Username:***</u> You have to include here the login (username) with the grantted privileges given before.
 
@@ -71,7 +71,7 @@ Now you have to simply fill the form:
 
 + <u>***Port:***</u> You have to specify here the port where your Redmine is listening.
 
-+ <u>***API:***</u> You have to specify here the API route. Please verify that you do not include host, port or version in this parameter. ***A commonly right value is "/"***
++ <u>***API:***</u> You have to specify here the API route. Please verify that you do not include host, port or version in this parameter. ***A commonly right value is "/"***.
 
 + <u>***Username:***</u> You have to include here the login (username) with the grantted privileges given before.
 
