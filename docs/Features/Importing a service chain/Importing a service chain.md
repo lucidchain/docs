@@ -24,7 +24,7 @@ You will be redirected to import page. There you can upload a yaml file with you
 </div>
 
 <div align="center">
-![Validation errors 3](./../../../static/img/import/validationErrors2.png)  
+![Validation errors 2](./../../../static/img/import/validationErrors2.png)  
 **Figure 3:** *Example of SCModel validation errors.*
 </div>
 
