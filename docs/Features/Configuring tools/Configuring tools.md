@@ -14,7 +14,7 @@ You can know if Lucid Chain has access to your ITop or your Redmine by checking 
 
 <div align="center">
 ![Not connected tools](./../../../static/img/configuration/notConnected.png)  
-**Figure 1:** *Initial Lucid Chain view with disconnected tools*
+**Figure 1:** *Initial Lucid Chain view with disconnected tools.*
 </div>
 
 If you are trying to connect your tool to Lucid Chain, you have to click on the **globe icon** to access configuration. Once you are there, you will see two forms, once for each tool. You <u>do not need</u> to configure both of them in order to have your tool connected.
@@ -50,8 +50,8 @@ Once REST Services and administrator profiles have been given to your user, you 
 Here we show an example **assuming** that we have an ITop listening in **localhost:8000** and that our user credentials are **user:"admin" pwd:"admin"**.
 
 <div align="center">
-![Not connected tools](./../../../static/img/configuration/ITopForm.png)  
-**Figure 2:** *Example of ITop configuration in localhost*
+![ITop form](./../../../static/img/configuration/ITopForm.png)  
+**Figure 2:** *Example of ITop configuration in localhost.*
 </div>
 
 ## Configuring Redmine
@@ -92,20 +92,24 @@ Aditionally, you will need to configure your Redmine's Database connection filli
 Here we show an example **assuming** that we have an **Redmine** listening in **localhost:8080** and that our user credentials are **user:"admin" pwd:"admin"**. We also **assume** that we have a database in **localhost:3307** and an user with credentials **user: root pwd: root** with CRUD privileges for a database named **"Redmine"**, which is our Redmine's database.
 
 <div align="center">
-![Not connected tools](./../../../static/img/configuration/RedmineForm.png)  
-**Figure 3:** *Example of Redmine configuration in localhost*
+![Redmine form](./../../../static/img/configuration/RedmineForm.png)  
+**Figure 3:** *Example of Redmine configuration in localhost.*
 </div>
 
 ## Save configuraion
 
 You can save this configuration by clicking of ***"Save"*** button. This will sava the data into your localstorage. This will ensure privacy because you can delete your configuration by cleaning you localstorage.
 
+<div align="center">
+![Saving configuration](./../../../static/img/configuration/savedButton.png)  
+**Figure 4:** *Configuration saving confirmation.*
+</div>
+
 <Disclaimer>
 In future versions you will be able to delete the configuration from Lucid chain.
 </Disclaimer>
 
 <div align="center">
-![Not connected tools](./../../../static/img/configuration/connected.png)  
-**Figure 4:** *Lucid Chain connected to ITop and Redmine*
+![Connected tools](./../../../static/img/configuration/connected.png)  
+**Figure 5:** *Lucid Chain connected to ITop and Redmine.*
 </div>
-
