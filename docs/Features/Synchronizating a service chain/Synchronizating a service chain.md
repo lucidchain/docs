@@ -106,7 +106,7 @@ button for having further information.
 
 Once you have clicked the button and you have waited, you will see a message saying that everything was synchronized.
 
-**NOTE:** Please be patient because synchronizations in ITop can be very slow.
+<u>**NOTE:**</u> Please be patient because synchronizations in ITop can be very slow.
 
 <div align="center">
 ![Synchronization finished](./../../../static/img/sync/synchronizationSuccessful.png)  

@@ -71,9 +71,35 @@ If any issues are shown, you will be able to see a lot of information about them
 
 + <u>***STATE:***</u> This column shows the current state of the issue. This is very usefull for service chain type state because you can kwno the service associated with it instantly.
 
-### SLA Passed Pie chart
+### SLA passed pie chart
 
-### SLA Passed last 6 months Pie chart
+If you go to the bottom, you will see some graphics. Now we are going to talk about these two pie charts.
+
+The big pie chart contains a representation of the total TTO and TTR passed percentage of the issues of this month. Once you have your cursor in the pie chart, it will show you the exact values with two decimals. The other one, which is smaller, represents the same but taking into account the total percentage of issues that have passed TTO and TTR.
+
+<Disclaimer>
+This pie charts only take into account closed issues. Moreover, if a issue is closed while whatching this page and you do not reload it, data will not be updated.
+</Disclaimer>
+
+<div align="center">
+![Global passed SLA graphics](./../../../static/img/metrics/SLAPieChartIdealSituation.png)  
+**Figure 5:** *Ideal situation where there all issues pass SLA.*
+</div>
+
+### SLA passed last 6 months bar chart
+
+The right part of the bottom charts is a bar chart which represents the percentage of issues that passed TTO and TTR in the last six months. In each month, you can analyse TTO and TTR separately, and you can see one progress bar for each property. Moving the cursos in them will show you the exact number. You can also see the exact percentage in the begining of each progress bar. If there are no bars, it means that there are not issues in that month.
+
+<Disclaimer>
+This bar chart takes into account closed issues. Moreover, if a issue is closed while whatching this page and you do not reload it, data will not be updated.
+</Disclaimer>
+
+<div align="center">
+![Issue bar chart](./../../../static/img/metrics/issueBarchart.png)  
+**Figure 6:** *Ideal situation where there all issues pass SLA.*
+</div>
+
+<u>**NOTE:**</u> See how in Figure 6 there are a lot of 0% due to the lack of issues in the past months. This can also appear when you start to use Lucid Chain metrics and your service chain is new. You will not have data because not enough time would have passed.
 
 ## Global Details
 

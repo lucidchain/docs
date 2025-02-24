@@ -52,7 +52,7 @@ If everything looks good, click the ***import*** button and Lucid Chain will sta
 
 Once you have clicked the button and you have waited, you will see a message saying that everything was imported.
 
-**NOTE:** Please be patient because importations in ITop can be very slow.
+<u>**NOTE:**</u> Please be patient because importations in ITop can be very slow.
 
 <div align="center">
 ![Import finished](./../../../static/img/import/importSuccessful.png)  
