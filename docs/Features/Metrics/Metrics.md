@@ -9,6 +9,10 @@ In this section you will learn about Lucid chain SLA metrics and how to interpre
 Take into account that in ITop TTR is defined as the time between **issue creation** and **issue resolution**. This **differs** from Lucid chain TTR definition. It is also important to remember that ***ownership-type state+team is not supported in ITop*** because Itop does not allow to assign and issue to a group without assining it to a user at the same time. We are very sorry for that but nothing can be done as we cannot modify your ITop in order to do this.
 </Alert>
 
+<Disclaimer>
+Please be patient because all metrics pages can be slow if you have a lot of issues and/or your service chain is very big.
+</Disclaimer>
+
 ## Choosing the target and selecting Metrics
 
 If you want to analyse your SLA metrics of your current service chain in Redmine or Itop, you can do it by clicking on Redmine or ITop logo and selecting ***Get SLA Metrics*** option in the modal.
@@ -169,4 +173,36 @@ If any issues are shown, you will be able to see a lot of information about them
 
 ### Pie charts
 
+In addition to the isssue table, you also have in the right two piecharts who show the percentage of issues passing TTO and TTR respectively. Understanding that percentages are calculated depending on the issues filtered is very important.
+
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
+<div align="center">
+![Ideal TTO pie chart](./../../../static/img/metrics/TTOChart.png)  
+**Figure 10:** *Ideal situation where all issues pass TTO.*
+</div>
+
+<div align="center">
+![Ideal TTR pie chart](./../../../static/img/metrics/TTRChart.png)  
+**Figure 11:** *Ideal situation where all issues pass TTR.*
+</div>
+
+</div>
+
 ## Service Details
+
+If you want to have a better look in some service's metrics, you have to go to ***[Global Overwivew](#global-overview)*** page and select in the ***[Organizations](#organizations)*** component the organization and team that you want to analyse. Once you have toggled the team, you have to click in ***View details*** button.
+
+<div align="center">
+![View service details](./../../../static/img/metrics/viewServiceDetails.png)  
+**Figure 12:** *View service details button.*
+</div>
+
+You will be redirected to a page identical to [Global details](#global-details). The difference here is that in the mermaid you will have the service highlighted in purple and the title will be *Service X Details*, being X the name of the selected service. The last difference is that the issues shown here will only belong to the selected service.
+
+:::important
+Here you will have the same features as in [Global details](#global-details), so we strongly recommend checking that section and learn how you can use it.
+:::
+
+<Disclaimer>
+If your service has no issues, you will not be able to access into this page.
+</Disclaimer>
