@@ -103,5 +103,70 @@ This bar chart takes into account closed issues. Moreover, if a issue is closed 
 
 ## Global Details
 
+If you click on ***View details*** button, you will be redirected to global details view. In here you will be able to see more statistics and filter your issues.
+
+<div align="center">
+![View details button](./../../../static/img/metrics/viewDetailsButton.png)  
+**Figure 7:** *View details button.*
+</div>
+
+The first thing you will notice is that you will see again your mermaid graph representation of your chain. You can toggle it and also zoom in by clicking on the graph.
+
+<Alert>
+If you see something in the mermaid graph like ***"Max size exceeded"*** do not panic. It is because your chain is too big to be represented in mermaid. We are very sorry for that but this is something we cannot fix because it is a mermaid limitation.
+</Alert>
+
+### Issue filtering
+
+You will also see a component that contains all the filtering possibilities that Lucid chain offers. You can use these parameters for filtering as you please. Let's see what they do.
+
+<div align="center">
+![Issue filter component](./../../../static/img/metrics/ticketFilters.png)  
+**Figure 8:** *Issue filters component.*
+</div>
+
+:::important
+All these filters have effects in issue table and TTO and TTR pie charts, as only filtered information will be taken into account.
+:::
+
+:::tip
+For a better filtering and more precission, you can use all these parameters at the same time.
+:::
+
++ <u>***From:***</u> This parameter filters issues by its creation date. You will display issues only created defore this Date. By default its value is *Null*, which does not filter anything.
++ <u>***To:***</u> This parameter filters issues by its creation date. You will display issues only created after this Date. By default its value is *Null*, which does not filter anything.
++ <u>***TTO over:***</u> This parameter filters issues by its TTO. You will display only issues with a TTO value greater that the specified value. By default its value is *0*, which does not filter anything.
++ <u>***TTR over:***</u> This parameter filters issues by its TTR. You will display only issues with a TTR value greater that the specified value. By default its value is *0*, which does not filter anything.
++ <u>***Ticket type:***</u> This parameter filters issues by its type. In ITop you will be able to distinguish between Incident and User Requests. In Redmine is much more usefull because  you will filter issues by tracker. By default its value is *All*, which does not filter anything.
++ <u>***Status:***</u> This parameter filters issues by its state. This can make obtain only open or closed issues. By default its value is *All*, which does not filter anything.
+
+<Disclaimer>
+Once you have decided you filter values do not forget to click in ***filter*** button in order to apply changes.
+</Disclaimer>
+
+### Issue table
+
+You will see below that filtering component a big table with a list of issues. Initially it contains all existings issues in your tool.
+
+<div align="center">
+![Issue table](./../../../static/img/metrics/issueTable.png)  
+**Figure 9:** *Issue table with only one issue.*
+</div>
+
+:::tip
+If you click in any issue, Lucid chain will redirect you exactly to the link of it in your ITop or Redmine in a new page in your browser.
+:::
+
+If any issues are shown, you will be able to see a lot of information about them. You will see some columns:
+
++ <u>***Issue:***</u> This column contains issue id, title, the person assigned to it, its type and its creation date.
+
++ <u>***TTO:***</u> This column contains the issue TTO. If TTO does not pass SLA, the exceding time will be shown below as *"+ X h"* in hours.
+
++ <u>***TTR:***</u> This column contains the issue TTR. If TTR does not pass SLA, the exceding time will be shown below as *"+ X h"* in hours.
+
++ <u>***TOTAL:***</u> This column contains the sum of issue TTO and TTR. If any of does not pass the SLA, exceding time will be shown below as *"+ Xh"* in hours.
+
+### Pie charts
 
 ## Service Details
