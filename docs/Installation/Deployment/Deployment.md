@@ -52,6 +52,16 @@ In order to use Lucid Chain infrastructure, you have to follow these steps:
 
 3. Once you have your .env you can run the following command to run all the containers.
 
+    :::important
+    Take into account that you need to have ***your ports 3000, 3306, 8080, 8081 and 8000 available*** in order to make it work. Please make sure you use ***latest*** version in Lucid chain because there are not other stable versions yet. 
+    :::
+
+    <Alert>
+    + In ITop it is only tested up to version 3.2.0. Choosing a greater version can cause unknown problems
+
+    + Redmine versions greater than 5.1.4 ***are not supported***. We are very sorry about that but there is nothing that we can do with it because we suspect that this is due to Gem internal configurations. In future versions we will try to support greater Redmine versions.
+    </Alert>
+
     ``` bin/bash
     docker-compose -f "docker-lucidchain/docker-compose.yaml" --env-file .env up -d
     ```
