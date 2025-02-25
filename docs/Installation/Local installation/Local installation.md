@@ -41,8 +41,13 @@ If you want to install locally ITop and Redmine too, you can do it all in one fo
     ```
 
     :::important
-    Take into account that you need to have ***your ports 3000, 3306, 8080, 8081 and 8000 available*** in order to make it work. Please make sure you use ***latest*** version in Lucid chain because there are not other stable versions yet. 
+    Take into account that you need to have ***your ports 3000, 3306, 8080, 8081 and 8000 available*** in order to make it work. Please make sure you use ***latest*** version in Lucid chain because there are not other stable versions yet.
     :::
+
+    <div align="center">
+    ![Installing in docker](./../../../static/img/installation/dockerLucidChainResult.png)  
+    **Figure 1:** *Lucid Chain installed with ITop and Redmine using Docker.*
+    </div>
 
     <Alert>
     + In ITop it is only tested up to version 3.2.0. Choosing a greater version can cause unknown problems
@@ -62,7 +67,42 @@ docker-compose -f "docker-compose-test.yaml" down -v
 
 ## Installation from repository
 
-If you are interested in having your own Lucid chain in local, and have access to make modifications, you should choose this option.
+If you are interested in having your own Lucid chain in local, and have access to make modifications, you should choose this option and follow these steps:
+
+1. Clone lucid chain repository.
+
+    ``` bin/bash
+    git clone https://github.com/lucidchain/wizard
+    cd wizard
+    ```
+
+2. Now you have to prepare the enviroment and install the dependencies. You are going to run it locally, so you can leave the env variables as they are.
+
+    ``` bin/bash
+    cd front
+    cp .env.example .env
+    npm install
+    npm run build
+    cd ..
+    cd back
+    cp .env.example .env
+    npm install
+    ```
+
+3. Run the application with *npm start* or *node app.js*
+
+    :::important
+    Take into account that you need to have ***your port 3000 available*** in order to make it work.
+    :::
+
+    <div align="center">
+    ![Run in local](./../../../static/img/installation/runningLocally.png)  
+    **Figure 2:** *Lucid Chain installed running locally.*
+    </div>
+
+<Disclaimer>
+If you are going to work in this repository, you will need to check contributing section for a better understanding a some additional installation details. You will also learn about enviroment variables so do not forget to check that.
+</Disclaimer>
 
 ## Custom Docker installation (Only recommended for developers)
 
