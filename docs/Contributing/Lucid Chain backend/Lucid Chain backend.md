@@ -1,8 +1,8 @@
----
-sidebar_position: 2
----
+# Lucid Chain backend
 
-# Backend
+In this section we are going to learn how lucid chain is structured. The first thing you can see when you enter the project, is that there are 2 parts very different from each other. The first one is ***back***. This folder contains all backend logic and the integrations with Redmine and ITop. The other one is ***front***, which contains all the frontend.
+
+## Backend
 
 This is the more complex part of the application. It has a relatively well distributed system that integrates Redmine and ITop tools with an API in order to make them understand and support SCModel and other features. In the following sections we will describe each part.
 
