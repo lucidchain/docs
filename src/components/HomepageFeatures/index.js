@@ -24,12 +24,11 @@ const FeatureList = [
     ),
   },
   {
-    title: 'What is Lucid Chain Wizard?',
+    title: 'Where can I find Lucid Chain Wizard?',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        You can find Luid chain Wizard in its <a href="https://github.com/lucidchain/wizard" target="_blank" rel="noopener noreferrer">Github repository</a> or in <a href="https://hub.docker.com/r/lucidchain/lucidchain_wizard" target="_blank" rel="noopener noreferrer">Dockerhub</a>.
       </>
     ),
   },
