@@ -1,6 +1,12 @@
 # Metrics Routes
 
+import Alert from '@site/src/components/Alert.js';
+
 In this section you will learn about metrics endpoints. This is by far the most complex part of the API so read carefully. Take into account that Lucid chain's API is meant to be used by the frontend, so if you are having too much trouble use it instead.
+
+<Alert>
+Using Lucid chain API is not recommended since its intention is to be managed by Lucid chain frontend. Please be aware that a bad use can cause problems in your Redmine or your ITop and we will not take that responsability. Be really sure of what you are doing and always check Open API Specifications, and other official documentation before proceding.  
+</Alert>
 
 ## POST `/sla-metrics/:target/global`
 

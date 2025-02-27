@@ -1,6 +1,12 @@
 # Purge Routes
 
-In this section you will learn about purge endpoints.
+import Alert from '@site/src/components/Alert.js';
+
+In this section you will learn about purge endpoints. Please be really cautious because database purgations are really dangerous operations. It will remove all data in your database.
+
+<Alert>
+Using Lucid chain API is not recommended since its intention is to be managed by Lucid chain frontend. Please be aware that a bad use can cause problems in your Redmine or your ITop and we will not take that responsability. Be really sure of what you are doing and always check Open API Specifications, and other official documentation before proceding.  
+</Alert>
 
 ## POST `/purge/:target`
 

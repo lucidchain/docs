@@ -5,6 +5,10 @@ import Alert from '@site/src/components/Alert.js';
 In this section, you will discover all the endpoints related to service chain importation.
 
 <Alert>
+Using Lucid chain API is not recommended since its intention is to be managed by Lucid chain frontend. Please be aware that a bad use can cause problems in your Redmine or your ITop and we will not take that responsability. Be really sure of what you are doing and always check Open API Specifications, and other official documentation before proceding.  
+</Alert>
+
+<Alert>
 Please take into account that service chain type state is not supported in ITop yet, and service chain type faceted is not fully supported on Redmine. We are sorry for that but in future versions this will be fixed.
 </Alert>
 
