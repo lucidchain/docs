@@ -3,7 +3,7 @@
 import Alert from '@site/src/components/Alert.js';
 import Disclaimer from '@site/src/components/Disclaimer.js';
 
-In this section you will learn how to clean your ITop and/or Redmine's database using Lucid Chain.
+In this section you will learn how to clean your ITop and/or Redmine's database using Lucid chain.
 
 <Disclaimer>
 In future versions we will have a transactional purge in ITop. This means that if any errors occur during removal, purgation will not continue and database will stay as in the begining.
@@ -15,7 +15,7 @@ If you want to purge your Redmine or Itop database, you can do it by clicking on
 
 <div align="center">
 ![Features modal](./../../../static/img/mysc/featuresModal.png)  
-**Figure 1:** *Lucid Chain available features modal.*
+**Figure 1:** *Lucid chain available features modal.*
 </div>
 
 ## Database purgation

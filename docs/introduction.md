@@ -16,7 +16,7 @@ Service chains are relationships between organizations and the services they pro
 
 ## ITop
 
-iTop (IT Operational Portal) is an [open-source project](https://github.com/Combodo/iTop) in PHP that includes various modules. It is used for IT service management and technological infrastructure administration. It is designed to manage and automate processes related to incidents, problems, changes and configuration management within an organization. It serves as both a configuration and incident manager. We will focus on incident management and change requests, as these are relevant to Lucid Chain.
+iTop (IT Operational Portal) is an [open-source project](https://github.com/Combodo/iTop) in PHP that includes various modules. It is used for IT service management and technological infrastructure administration. It is designed to manage and automate processes related to incidents, problems, changes and configuration management within an organization. It serves as both a configuration and incident manager. We will focus on incident management and change requests, as these are relevant to Lucid chain.
 
 ITop’s incident management is based on ITIL, which greatly standardizes processes and makes them easy to understand. When properly configured, the procedure is as follows:
 

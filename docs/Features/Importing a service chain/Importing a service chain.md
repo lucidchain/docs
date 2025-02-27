@@ -11,7 +11,7 @@ If you want to import your service chain into Redmine or Itop, you can do it by 
 
 <div align="center">
 ![Features modal](./../../../static/img/mysc/featuresModal.png)  
-**Figure 1:** *Lucid Chain available features modal.*
+**Figure 1:** *Lucid chain available features modal.*
 </div>
 
 ## Chain importation
@@ -43,7 +43,7 @@ Once you have selected a valid file, you can see a mermaid graph representing yo
 If you see something in the mermaid graph like ***"Max size exceeded"*** do not panic. It is because your chain is too big to be represented in mermaid. We are very sorry for that but this is something we cannot fix because it is a mermaid limitation.
 </Alert>
 
-If everything looks good, click the ***import*** button and Lucid Chain will start importing your service chain. If anything goes wrong during the process, any object created in between will be deleted. This is because **Lucid Chain importation is transactional**.
+If everything looks good, click the ***import*** button and Lucid chain will start importing your service chain. If anything goes wrong during the process, any object created in between will be deleted. This is because **Lucid chain importation is transactional**.
 
 <div align="center">
 ![Import process](./../../../static/img/import/importing.png)  

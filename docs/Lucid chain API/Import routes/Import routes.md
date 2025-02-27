@@ -1,6 +1,12 @@
 # Import Routes
 
+import Alert from '@site/src/components/Alert.js';
+
 In this section, you will discover all the endpoints related to service chain importation.
+
+<Alert>
+Please take into account that service chain type state is not supported in ITop yet, and service chain type faceted is not fully supported on Redmine. We are sorry for that but in future versions this will be fixed.
+</Alert>
 
 ## POST `/import/upload`
 

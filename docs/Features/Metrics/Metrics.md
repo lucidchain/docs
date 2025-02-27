@@ -19,12 +19,12 @@ If you want to analyse your SLA metrics of your current service chain in Redmine
 
 <div align="center">
 ![Features modal](./../../../static/img/mysc/featuresModal.png)  
-**Figure 1:** *Lucid Chain available features modal.*
+**Figure 1:** *Lucid chain available features modal.*
 </div>
 
 ## Global Overview
 
-You will be redirected to global overview page. You will be asked about choosing your service chain type. This will make Lucid Chain export your current chain and showing it to you. You will be able to see your current chain represented in a mermaid grpah. You can toggle the mermaid and also zoom in by clicking on the graph. You can also see some import imformation about how many organizations, teams and service you are going to import.
+You will be redirected to global overview page. You will be asked about choosing your service chain type. This will make Lucid chain export your current chain and showing it to you. You will be able to see your current chain represented in a mermaid grpah. You can toggle the mermaid and also zoom in by clicking on the graph. You can also see some import imformation about how many organizations, teams and service you are going to import.
 
 <div align="center">
 ![Chain type modal](./../../../static/img/mysc/chainTypeModal.png)  
@@ -103,7 +103,7 @@ This bar chart takes into account closed issues. Moreover, if a issue is closed 
 **Figure 6:** *Ideal situation where there all issues pass SLA.*
 </div>
 
-<u>**NOTE:**</u> See how in Figure 6 there are a lot of 0% due to the lack of issues in the past months. This can also appear when you start to use Lucid Chain metrics and your service chain is new. You will not have data because not enough time would have passed.
+<u>**NOTE:**</u> See how in Figure 6 there are a lot of 0% due to the lack of issues in the past months. This can also appear when you start to use Lucid chain metrics and your service chain is new. You will not have data because not enough time would have passed.
 
 ## Global Details
 

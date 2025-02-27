@@ -10,7 +10,7 @@ If you want to export your service chain from Redmine or Itop, you can do it by 
 
 <div align="center">
 ![Features modal](./../../../static/img/mysc/featuresModal.png)  
-**Figure 1:** *Lucid Chain available features modal.*
+**Figure 1:** *Lucid chain available features modal.*
 </div>
 
 ## Chain exportation
@@ -27,7 +27,7 @@ If you see something in the mermaid graph like ***"Max size exceeded"*** do not 
 </Alert>
 
 :::tip
-You can decide whether your data is going to be anonimized or not by selecting this option in the checkbox. ***By default Lucid Chain will not anonimize data***.
+You can decide whether your data is going to be anonimized or not by selecting this option in the checkbox. ***By default Lucid chain will not anonimize data***.
 
 <div align="center">
 ![Anonymize data option](./../../../static/img/export/anonimizeData.png)  
@@ -36,7 +36,7 @@ You can decide whether your data is going to be anonimized or not by selecting t
 
 :::
 
-Whenever you are ready you can click in ***export*** button and Lucid Chain will start working on that. After some seconds you will be able to download you service chain in yaml compliant with SCModel. You can choose the file's name and also its location. By default, it will be in ***"Donwloads"*** folder and it will be named ***"export.yaml"***.
+Whenever you are ready you can click in ***export*** button and Lucid chain will start working on that. After some seconds you will be able to download you service chain in yaml compliant with SCModel. You can choose the file's name and also its location. By default, it will be in ***"Donwloads"*** folder and it will be named ***"export.yaml"***.
 
 <div align="center">
 ![Export finished](./../../../static/img/export/exportSuccessful.png)  

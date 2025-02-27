@@ -1,6 +1,6 @@
 # Metrics Routes
 
-In this section you will learn about metrics endpoints. This is by far the most complex part of the API so read carefully. Take into account that Lucid Chain's API is meant to be used by the frontend, so if you are having too much trouble use it instead.
+In this section you will learn about metrics endpoints. This is by far the most complex part of the API so read carefully. Take into account that Lucid chain's API is meant to be used by the frontend, so if you are having too much trouble use it instead.
 
 ## POST `/sla-metrics/:target/global`
 

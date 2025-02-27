@@ -10,7 +10,7 @@ In this section you will learn how to synchronize your current service chain in 
 We call service chain synchronization to the process of updaating your current service chain. In order to keep all the data, your current service chain will be marked as **DEPRECATED** and it will be substituted by the updated one. This way you can keep all the issues and other configurations without losing the oportunity to add new things to your service chain.
 
 <Disclaimer>
-This is not a definitive solution and we are working to improve it soon. Lucid Chain actually renames everything with the prefix *"_DEPRECATED_"* and adds the synchronization date. Then it creates a new service chain using the synchronization yaml. In future versions this will be more complex.
+This is not a definitive solution and we are working to improve it soon. Lucid chain actually renames everything with the prefix *"_DEPRECATED_"* and adds the synchronization date. Then it creates a new service chain using the synchronization yaml. In future versions this will be more complex.
 </Disclaimer>
 
 :::important
@@ -40,12 +40,12 @@ If you want to synchronice your current service chain in Redmine or Itop, you ca
 
 <div align="center">
 ![Features modal](./../../../static/img/mysc/featuresModal.png)  
-**Figure 1:** *Lucid Chain available features modal.*
+**Figure 1:** *Lucid chain available features modal.*
 </div>
 
 ## Chain synchronization
 
-You will be redirected to synchronization page. You will be asked about choosing your service chain type. This will make Lucid Chain export your current chain and showing it to you. You will be able to see your current chain represented in a mermaid grpah.
+You will be redirected to synchronization page. You will be asked about choosing your service chain type. This will make Lucid chain export your current chain and showing it to you. You will be able to see your current chain represented in a mermaid grpah.
 
 <div align="center">
 ![Chain type modal](./../../../static/img/mysc/chainTypeModal.png)  
@@ -92,7 +92,7 @@ Now you will be able to see a lot of infromation. You can see both current and u
 **Figure 7:** *Differences button.*
 </div>
 
-If everything looks good, click the ***Syncrhonize*** button and Lucid Chain will start the process. If anything goes wrong during it, any object created or modified in between will be deleted. This is because **Lucid Chain synchronization is transactional**.
+If everything looks good, click the ***Syncrhonize*** button and Lucid chain will start the process. If anything goes wrong during it, any object created or modified in between will be deleted. This is because **Lucid chain synchronization is transactional**.
 
 <Disclaimer>
 Please be sure about what you are going to do, and do not forget yo click ***Before sync***

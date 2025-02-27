@@ -1,8 +1,8 @@
-# Lucid Chain backend
+# Lucid chain backend
 
 import Disclaimer from '@site/src/components/Disclaimer.js';
 
-In this section we are going to learn how Lucid Chain backend is structured. The first thing you can see when you enter the project, is that there are 2 parts very different from each other. The first one is ***back***. This folder contains all backend logic and the integrations with Redmine and ITop. The other one is ***front***, which contains all the frontend. Here you are about to explore *back* folder in order to understand its content. This is the most complex part of the application. It has a relatively well distributed system that integrates Redmine and ITop tools with an API in order to make them understand and support SCModel and other features. In the following sections we will describe each part.
+In this section we are going to learn how Lucid chain backend is structured. The first thing you can see when you enter the project, is that there are 2 parts very different from each other. The first one is ***back***. This folder contains all backend logic and the integrations with Redmine and ITop. The other one is ***front***, which contains all the frontend. Here you are about to explore *back* folder in order to understand its content. This is the most complex part of the application. It has a relatively well distributed system that integrates Redmine and ITop tools with an API in order to make them understand and support SCModel and other features. In the following sections we will describe each part.
 
 <div align="center">
 ![Backend structure](./../../../static/img/structure/backendStructure.png)  
@@ -21,7 +21,7 @@ As you can see in ***Figure 1*** there are some files that are not in any of the
 + <u>**logger.js:**</u> This the application logger.
 + <u>**package.json:**</u> This file contains all the dependencies. There are some custom scripts in it.
 + <u>**package-lock.json:**</u> This file contains all the project dependencies with its exact versions.
-+ <u>**readme.md:**</u> This file contains some information about Lucid Chain and it contains some SCModel contraints and a tiny tutorial.
++ <u>**readme.md:**</u> This file contains some information about Lucid chain and it contains some SCModel contraints and a tiny tutorial.
 
 <Disclaimer>
 ***"node-modules"*** directory is generated automatically and you do not have to worry about it.
@@ -83,7 +83,7 @@ Here we can find some examples of service chains. There are invalid yamls so we 
 This part of the project is ***currently empty***. Here we will find all lucid chain tests in the future.
 
 <Disclaimer>
-This section is always open to contributions because it is very important and until now no formal testing has been added. In future Lucid Chain versions we will include tests, as it is an essential feature for preserve reliability when adding changes.
+This section is always open to contributions because it is very important and until now no formal testing has been added. In future Lucid chain versions we will include tests, as it is an essential feature for preserve reliability when adding changes.
 </Disclaimer>
 
 ## uploads directory

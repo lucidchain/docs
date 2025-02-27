@@ -1,27 +1,27 @@
 # Configuring tools
 
-In this section you will learn how to connect your Lucid Chain instance to your Redmine and/or ITop.
+In this section you will learn how to connect your Lucid chain instance to your Redmine and/or ITop.
 
 import Disclaimer from '@site/src/components/Disclaimer.js';
 
 <Disclaimer>
-Lucid Chain only supports configuration for **Redmine and ITop**. Any other Service management tool is not available for configuration yet.
+Lucid chain only supports configuration for **Redmine and ITop**. Any other Service management tool is not available for configuration yet.
 </Disclaimer>
 
 ## Introduction
 
-You can know if Lucid Chain has access to your ITop or your Redmine by checking the message below each tool image. If everything is working the application will desplay ***Connected***. Otherwise, ***Not connected*** will appear.
+You can know if Lucid chain has access to your ITop or your Redmine by checking the message below each tool image. If everything is working the application will desplay ***Connected***. Otherwise, ***Not connected*** will appear.
 
 <div align="center">
 ![Not connected tools](./../../../static/img/configuration/notConnected.png)  
-**Figure 1:** *Initial Lucid Chain view with disconnected tools.*
+**Figure 1:** *Initial Lucid chain view with disconnected tools.*
 </div>
 
-If you are trying to connect your tool to Lucid Chain, you have to click on the **globe icon** to access configuration. Once you are there, you will see two forms, once for each tool. You <u>do not need</u> to configure both of them in order to have your tool connected.
+If you are trying to connect your tool to Lucid chain, you have to click on the **globe icon** to access configuration. Once you are there, you will see two forms, once for each tool. You <u>do not need</u> to configure both of them in order to have your tool connected.
 
 ## Configuring ITop
 
-When configuring ITop you will need first to have an user with **"Administrator"** and **"REST services user"** profiles. You can verify this in *"administration"* **>** *"User Accounts"* **>** Click in the admin user you want to use for Lucid Chain Wizard **>** *Profiles*.
+When configuring ITop you will need first to have an user with **"Administrator"** and **"REST services user"** profiles. You can verify this in *"administration"* **>** *"User Accounts"* **>** Click in the admin user you want to use for Lucid chain Wizard **>** *Profiles*.
 
 If you want to configure your profiles and add them to a new user. Follow these steps:
 
@@ -111,5 +111,5 @@ In future versions you will be able to delete the configuration from Lucid chain
 
 <div align="center">
 ![Connected tools](./../../../static/img/configuration/connected.png)  
-**Figure 5:** *Lucid Chain connected to ITop and Redmine.*
+**Figure 5:** *Lucid chain connected to ITop and Redmine.*
 </div>

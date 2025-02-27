@@ -1,4 +1,4 @@
-# Lucid Chain frontend
+# Lucid chain frontend
 
 import Disclaimer from '@site/src/components/Disclaimer.js';
 import Alert from '@site/src/components/Alert.js';
@@ -108,7 +108,7 @@ BACKEND_API="http://localhost:3000"
 This way you will make correct requests to your backend and you will be able to see all your changes without running ***npm run build***.
 
 <Disclaimer>
-Please take into account that you will also need to have your Lucid Chain in developent mode. You can do this by ***setting APP_MODE enviroment variable to dev.*** If you do not do that, your backend will reject the requests because of authentication reasons.
+Please take into account that you will also need to have your Lucid chain in developent mode. You can do this by ***setting APP_MODE enviroment variable to dev.*** If you do not do that, your backend will reject the requests because of authentication reasons.
 </Disclaimer>
 
 <Alert>

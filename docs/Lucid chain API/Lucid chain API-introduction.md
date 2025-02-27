@@ -4,8 +4,14 @@ sidebar_position: 1
 
 # Lucid chain API
 
-In this section you are going to learn about Luicd chain API and how to use it. In case you do not know, it is possible to use Lucid Chain without its frontend. Of course this has some limitations and it is a bit annoying since Lucid Chain UI is designed to make easier its API's use.
+import Alert from '@site/src/components/Alert.js';
+
+In this section you are going to learn about Luicd chain API and how to use it. In case you do not know, it is possible to use Lucid chain without its frontend. Of course this has some limitations and it is a bit annoying since Lucid chain UI is designed to make easier its API's use.
+
+<Alert>
+Using Lucid chain API is not recommended since its intention is to be managed by Lucid chain frontend. Please be aware that a bad use can cause problems in your Redmine or your ITop and we will not take that responsability. Be really sure of what you are doing and always check Open API Specifications, and other official documentation before proceding.  
+</Alert>
 
 ## Open API Specifications
 
-Lucid Chain includes an Open API specification route made with ***Swagger*** that contains all the information about the endopoints. It is available at ***/api-docs*** route.
+Lucid chain includes an Open API specification route made with ***Swagger*** that contains all the information about the endopoints. It is available at ***/api-docs*** route.

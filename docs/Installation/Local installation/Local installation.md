@@ -7,18 +7,18 @@ sidebar_position: 2
 import Disclaimer from '@site/src/components/Disclaimer.js';
 import Alert from '@site/src/components/Alert.js';
 
-In this section you will learn how to run Lucid Chain locally. There are 3 ways and each one is usefull for something different.
+In this section you will learn how to run Lucid chain locally. There are 3 ways and each one is usefull for something different.
 
 ## Installation with Docker (Recommended)
 
-If you want to install just Lucid Chain wizard because you already have Redmine or ITop available and deployed, you just have to run the following commands:
+If you want to install just Lucid chain because you already have Redmine or ITop available and deployed, you just have to run the following commands:
 
 ``` bin/bash
 docker pull lucidchain/lucidchain_wizard:latest
 docker run -d --name lucid-chain lucidchain/lucidchain_wizard:latest
 ```
 
-This will pull Lucid Chain image and run a container named ***lucid-chain*** in your docker.
+This will pull Lucid chain image and run a container named ***lucid-chain*** in your docker.
 
 :::important
 Take into account that you need to have ***your port 3000 available*** in order to make it work. Please make sure you use ***latest*** version because there are not other stable versions yet.
@@ -46,7 +46,7 @@ If you want to install locally ITop and Redmine too, you can do it all in one fo
 
     <div align="center">
     ![Installing in docker](./../../../static/img/installation/dockerLucidChainResult.png)  
-    **Figure 1:** *Lucid Chain installed with ITop and Redmine using Docker.*
+    **Figure 1:** *Lucid chain installed with ITop and Redmine using Docker.*
     </div>
 
     <Alert>
@@ -97,7 +97,7 @@ If you are interested in having your own Lucid chain in local, and have access t
 
     <div align="center">
     ![Run in local](./../../../static/img/installation/runningLocally.png)  
-    **Figure 2:** *Lucid Chain installed running locally.*
+    **Figure 2:** *Lucid chain installed running locally.*
     </div>
 
 <Disclaimer>
