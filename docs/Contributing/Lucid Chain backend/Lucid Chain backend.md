@@ -14,7 +14,7 @@ In this section we are going to learn how Lucid Chain backend is structured. The
 As you can see in ***Figure 1*** there are some files that are not in any of the directories. Here we are going to explain all of them.
 
 + <u>**.env:**</u> This is a special configuration file. In case you have just cloned the repo you will not have it.
-+ <u>**.env.example:**</u> This is a example of how your .env file should look like. We will cover enviroment variable later.
++ <u>**.env.example:**</u> This is a example of how your .env file should look like. We will cover enviroment variables later.
 + <u>**.gitignore:**</u> In this file we specify the files that we do not want git to track.
 + <u>**app.js:**</u> This is the main file. Here we have all the application logic an the connection to the frontend. It is very important to manipulate it with caution.
 + <u>**encripter.js:**</u> Here you can find all the encryption logic.
@@ -22,6 +22,10 @@ As you can see in ***Figure 1*** there are some files that are not in any of the
 + <u>**package.json:**</u> This file contains all the dependencies. There are some custom scripts in it.
 + <u>**package-lock.json:**</u> This file contains all the project dependencies with its exact versions.
 + <u>**readme.md:**</u> This file contains some information about Lucid Chain and it contains some SCModel contraints and a tiny tutorial.
+
+<Disclaimer>
+***"node-modules"*** directory is generated automatically and you do not have to worry about it.
+</Disclaimer>
 
 ## lucid-chain-tools directory
 
