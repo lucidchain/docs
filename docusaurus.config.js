@@ -79,7 +79,6 @@ const config = {
             position: 'left',
             label: 'Official Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/lucidchain/wizard',
             label: 'GitHub',
@@ -106,19 +105,11 @@ const config = {
           {
             title: 'Community',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
             ],
           },
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
