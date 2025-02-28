@@ -39,7 +39,7 @@ This is not a definitive solution and we are working to improve it soon. Lucid c
 If you want to synchronice your current service chain in Redmine or Itop, you can do it by clicking on Redmine or ITop logo and selecting ***Synchronize*** option in the modal.
 
 <div align="center">
-![Features modal](./../../../static/img/mysc/featuresModal.png)  
+![Features modal](/img/mysc/featuresModal.png)  
 **Figure 1:** *Lucid chain available features modal.*
 </div>
 
@@ -48,7 +48,7 @@ If you want to synchronice your current service chain in Redmine or Itop, you ca
 You will be redirected to synchronization page. You will be asked about choosing your service chain type. This will make Lucid chain export your current chain and showing it to you. You will be able to see your current chain represented in a mermaid grpah.
 
 <div align="center">
-![Chain type modal](./../../../static/img/mysc/chainTypeModal.png)  
+![Chain type modal](/img/mysc/chainTypeModal.png)  
 **Figure 2:** *Service chain type modal.*
 </div>
 
@@ -56,17 +56,17 @@ If everything goes right, a message like ***"Service chain retrieved. Select a f
 If you want to know more about these yaml files or SCModels, we recomend checking [creating my service chain](../Creating%20my%20service%20chain/Creating%20my%20service%20chain.md) section.
 
 <div align="center">
-![Validation errors 1](./../../../static/img/import/validationErrors1.png)  
+![Validation errors 1](/img/import/validationErrors1.png)  
 **Figure 3:** *Example of indentation errors.*
 </div>
 
 <div align="center">
-![Validation errors 2](./../../../static/img/import/validationErrors2.png)  
+![Validation errors 2](/img/import/validationErrors2.png)  
 **Figure 4:** *Example of SCModel validation errors.*
 </div>
 
 <div align="center">
-![Validation errors 3](./../../../static/img/sync/synchronizationErrors.png)  
+![Validation errors 3](/img/sync/synchronizationErrors.png)  
 **Figure 5:** *Example of Synchronization errors.*
 </div>
 
@@ -77,7 +77,7 @@ Please take into account that service chain type state is not supported in ITop 
 Once you have selected a valid file, you can see a mermaid graph representing your service chain. You can toggle this mermaid too and also zoom in by clicking on the graph. You can also see some synchronization imformation about how many organizations, teams and service you are going to import.
 
 <div align="center">
-![Import information](./../../../static/img/import/importInfo.png)  
+![Import information](/img/import/importInfo.png)  
 **Figure 6:** *Import information summary.*
 </div>
 
@@ -88,7 +88,7 @@ If you see something in the mermaids graphs like ***"Max size exceeded"*** do no
 Now you will be able to see a lot of infromation. You can see both current and uploaded service chain simultaneously and a merged service chain with all the information. You can also see a ***Show detailed differences*** button. If you click on it, a detailed list of changes made to your service chain will be displayed. In every section, you can click and toggle information knowing which things have been deleted and added. You can click ***Hide differences*** to close this part of the screen.
 
 <div align="center">
-![Differences button](./../../../static/img/sync/differencesButton.png)  
+![Differences button](/img/sync/differencesButton.png)  
 **Figure 7:** *Differences button.*
 </div>
 
@@ -100,7 +100,7 @@ button for having further information.
 </Disclaimer>
 
 <div align="center">
-![Synchronization progress](./../../../static/img/sync/synchronizing.png)  
+![Synchronization progress](/img/sync/synchronizing.png)  
 **Figure 8:** *Synchronization progress.*
 </div>
 
@@ -109,6 +109,6 @@ Once you have clicked the button and you have waited, you will see a message say
 <u>**NOTE:**</u> Please be patient because synchronizations in ITop can be very slow.
 
 <div align="center">
-![Synchronization finished](./../../../static/img/sync/synchronizationSuccessful.png)  
+![Synchronization finished](/img/sync/synchronizationSuccessful.png)  
 **Figure 9:** *Synchronization result.*
 </div>

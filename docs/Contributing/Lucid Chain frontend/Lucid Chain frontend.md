@@ -6,7 +6,7 @@ import Alert from '@site/src/components/Alert.js';
 In this section we are going to learn how lucid chain is structured. The first thing you can see when you enter the project, is that there are 2 parts very different from each other. The first one is ***back***. This folder contains all backend logic and the integrations with Redmine and ITop. The other one is ***front***, which contains all the frontend. Here you are about to explore *front* folder in order to understand its content. This is relatively easy to understand and it has a clear structure. It is a simple project developed in Svelte. The main part is in ***src*** folder. In ***components*** we can find all the different frontend reusable and/or complex parts. Some examples are issue tables, piecharts and other artifacts.
 
 <div align="center">
-![Frontend structure](./../../../static/img/structure/frontendStructure.png)  
+![Frontend structure](/img/structure/frontendStructure.png)  
 **Figure 1:** *Lucid chain frontend structure.*
 </div>
 
@@ -36,7 +36,7 @@ As you can see in ***Figure 1*** there are some files that are not in any of the
 In src directoty we can find all the interesting and important content. It has all frontend logic. Now let's explore it. The only file here is ***app.html***. Here we import using html some styles. There is no need to change this file unless you would like to import some new libraries in the html.
 
 <div align="center">
-![src structure](./../../../static/img/structure/frontendSrcStructure.png)  
+![src structure](/img/structure/frontendSrcStructure.png)  
 **Figure 2:** *Lucid chain frontend src structure.*
 </div>
 
@@ -75,7 +75,7 @@ Let's supose that there is a file called **+page.svelte** inside *[target]* fold
 In this case, the user will find the same page whatever taget value is. In lucid chain case, this means that */export/itop* and */export/redmine* will lead to the same screen.
 
 <div align="center">
-![Routes structure](./../../../static/img/structure/routesStrcuture.png)  
+![Routes structure](/img/structure/routesStrcuture.png)  
 **Figure 3:** *Lucid chain routes directory structure.*
 </div>
 

@@ -5,7 +5,7 @@ import Disclaimer from '@site/src/components/Disclaimer.js';
 In this section we are going to learn how Lucid chain backend is structured. The first thing you can see when you enter the project, is that there are 2 parts very different from each other. The first one is ***back***. This folder contains all backend logic and the integrations with Redmine and ITop. The other one is ***front***, which contains all the frontend. Here you are about to explore *back* folder in order to understand its content. This is the most complex part of the application. It has a relatively well distributed system that integrates Redmine and ITop tools with an API in order to make them understand and support SCModel and other features. In the following sections we will describe each part.
 
 <div align="center">
-![Backend structure](./../../../static/img/structure/backendStructure.png)  
+![Backend structure](/img/structure/backendStructure.png)  
 **Figure 1:** *Lucid chain backend structure.*
 </div>
 
@@ -46,7 +46,7 @@ Here we find all Redmine logic, including importation, exportation and so on. Me
 Here we can find SCModel validations and some common functions used in Redmine and ITop logic.
 
 <div align="center">
-![lucid-chain-tools structure](./../../../static/img/structure/lucid-chain-toolsStructure.png)  
+![lucid-chain-tools structure](/img/structure/lucid-chain-toolsStructure.png)  
 **Figure 2:** *lucid-chain-tools directory structure.*
 </div>
 
@@ -61,7 +61,7 @@ Please do not forget to include Open API specifications in case you implement a 
 In ***services folder*** we have all the functions that use index.js from lucid-chain-tools. There is one service for each feature.
 
 <div align="center">
-![src structure](./../../../static/img/structure/srcStructure.png)  
+![src structure](/img/structure/srcStructure.png)  
 **Figure 3:** *src directory structure.*
 </div>
 
@@ -74,7 +74,7 @@ Here we can find some examples of service chains. There are invalid yamls so we 
 + <u>**testing_metrics_material:**</u> This folder has the same purpose but it used sample data in csv for seeding Redmine database. ***It is also deprecated.***
 
 <div align="center">
-![testing-material structure](./../../../static/img/structure/testing-materialStructure.png)  
+![testing-material structure](/img/structure/testing-materialStructure.png)  
 **Figure 4:** *testing-material directory structure.*
 </div>
 
@@ -95,8 +95,8 @@ In future versinos Lucid chain will delete files when it finish working with the
 </Disclaimer>
 
 <div align="center">
-![test and uploads structure](./../../../static/img/structure/uploadsAndTestStructure.png)  
-**Figure 4:** *tests and uploads structure.*
+![test and uploads structure](/img/structure/uploadsAndTestStructure.png)  
+**Figure 5:** *tests and uploads structure.*
 </div>
 
 ## Enviroment variables

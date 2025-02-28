@@ -18,7 +18,7 @@ Please be patient because all metrics pages can be slow if you have a lot of iss
 If you want to analyse your SLA metrics of your current service chain in Redmine or Itop, you can do it by clicking on Redmine or ITop logo and selecting ***Get SLA Metrics*** option in the modal.
 
 <div align="center">
-![Features modal](./../../../static/img/mysc/featuresModal.png)  
+![Features modal](/img/mysc/featuresModal.png)  
 **Figure 1:** *Lucid chain available features modal.*
 </div>
 
@@ -27,7 +27,7 @@ If you want to analyse your SLA metrics of your current service chain in Redmine
 You will be redirected to global overview page. You will be asked about choosing your service chain type. This will make Lucid chain export your current chain and showing it to you. You will be able to see your current chain represented in a mermaid grpah. You can toggle the mermaid and also zoom in by clicking on the graph. You can also see some import imformation about how many organizations, teams and service you are going to import.
 
 <div align="center">
-![Chain type modal](./../../../static/img/mysc/chainTypeModal.png)  
+![Chain type modal](/img/mysc/chainTypeModal.png)  
 **Figure 2:** *Service chain type modal.*
 </div>
 
@@ -46,7 +46,7 @@ When we say that an issue has passed SLA, it means that this issue's TTO and TTR
 </Disclaimer>
 
 <div align="center">
-![Organizations component](./../../../static/img/metrics/OrganizationComponent.png)  
+![Organizations component](/img/metrics/OrganizationComponent.png)  
 **Figure 3:** *Basic example of organization component.*
 </div>
 
@@ -55,7 +55,7 @@ When we say that an issue has passed SLA, it means that this issue's TTO and TTR
 If you scroll down you will be able to see a rectagle that says ***Problematic open issues  (X/Y)***, where X is the total number of problematic open issues, and the Y is the total number of open issues. You can click on it in order to toggle it and see the table.Here you can see all the open issues whose TTOs and/or TTRs have been exceded. The ideal situation is an empty table (Figure 4).
 
 <div align="center">
-![Ideal problematic open issues table](./../../../static/img/metrics/problematicOpenIssues.png)  
+![Ideal problematic open issues table](/img/metrics/problematicOpenIssues.png)  
 **Figure 4:** *Ideal situation where there are not problematic open issues.*
 </div>
 
@@ -86,7 +86,7 @@ This pie charts only take into account closed issues. Moreover, if a issue is cl
 </Disclaimer>
 
 <div align="center">
-![Global passed SLA graphics](./../../../static/img/metrics/SLAPieChartIdealSituation.png)  
+![Global passed SLA graphics](/img/metrics/SLAPieChartIdealSituation.png)  
 **Figure 5:** *Ideal situation where there all issues pass SLA.*
 </div>
 
@@ -99,7 +99,7 @@ This bar chart takes into account closed issues. Moreover, if a issue is closed 
 </Disclaimer>
 
 <div align="center">
-![Issue bar chart](./../../../static/img/metrics/issueBarchart.png)  
+![Issue bar chart](/img/metrics/issueBarchart.png)  
 **Figure 6:** *Ideal situation where there all issues pass SLA.*
 </div>
 
@@ -110,7 +110,7 @@ This bar chart takes into account closed issues. Moreover, if a issue is closed 
 If you click on ***View details*** button, you will be redirected to global details view. In here you will be able to see more statistics and filter your issues.
 
 <div align="center">
-![View details button](./../../../static/img/metrics/viewDetailsButton.png)  
+![View details button](/img/metrics/viewDetailsButton.png)  
 **Figure 7:** *View details button.*
 </div>
 
@@ -125,7 +125,7 @@ If you see something in the mermaid graph like ***"Max size exceeded"*** do not 
 You will also see a component that contains all the filtering possibilities that Lucid chain offers. You can use these parameters for filtering as you please. Let's see what they do.
 
 <div align="center">
-![Issue filter component](./../../../static/img/metrics/ticketFilters.png)  
+![Issue filter component](/img/metrics/ticketFilters.png)  
 **Figure 8:** *Issue filters component.*
 </div>
 
@@ -153,7 +153,7 @@ Once you have decided you filter values do not forget to click in ***filter*** b
 You will see below that filtering component a big table with a list of issues. Initially it contains all existings issues in your tool.
 
 <div align="center">
-![Issue table](./../../../static/img/metrics/issueTable.png)  
+![Issue table](/img/metrics/issueTable.png)  
 **Figure 9:** *Issue table with only one issue.*
 </div>
 
@@ -177,12 +177,12 @@ In addition to the isssue table, you also have in the right two piecharts who sh
 
 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
 <div align="center">
-![Ideal TTO pie chart](./../../../static/img/metrics/TTOChart.png)  
+![Ideal TTO pie chart](/img/metrics/TTOChart.png)  
 **Figure 10:** *Ideal situation where all issues pass TTO.*
 </div>
 
 <div align="center">
-![Ideal TTR pie chart](./../../../static/img/metrics/TTRChart.png)  
+![Ideal TTR pie chart](/img/metrics/TTRChart.png)  
 **Figure 11:** *Ideal situation where all issues pass TTR.*
 </div>
 
@@ -193,7 +193,7 @@ In addition to the isssue table, you also have in the right two piecharts who sh
 If you want to have a better look in some service's metrics, you have to go to ***[Global Overwivew](#global-overview)*** page and select in the ***[Organizations](#organizations)*** component the organization and team that you want to analyse. Once you have toggled the team, you have to click in ***View details*** button.
 
 <div align="center">
-![View service details](./../../../static/img/metrics/viewServiceDetails.png)  
+![View service details](/img/metrics/viewServiceDetails.png)  
 **Figure 12:** *View service details button.*
 </div>
 

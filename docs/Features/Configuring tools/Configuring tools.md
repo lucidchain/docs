@@ -13,7 +13,7 @@ Lucid chain only supports configuration for **Redmine and ITop**. Any other Serv
 You can know if Lucid chain has access to your ITop or your Redmine by checking the message below each tool image. If everything is working the application will desplay ***Connected***. Otherwise, ***Not connected*** will appear.
 
 <div align="center">
-![Not connected tools](./../../../static/img/configuration/notConnected.png)  
+![Not connected tools](/img/configuration/notConnected.png)  
 **Figure 1:** *Initial Lucid chain view with disconnected tools.*
 </div>
 
@@ -50,7 +50,7 @@ Once REST Services and administrator profiles have been given to your user, you 
 Here we show an example **assuming** that we have an ITop listening in **localhost:8000** and that our user credentials are **user:"admin" pwd:"admin"**.
 
 <div align="center">
-![ITop form](./../../../static/img/configuration/ITopForm.png)  
+![ITop form](/img/configuration/ITopForm.png)  
 **Figure 2:** *Example of ITop configuration in localhost.*
 </div>
 
@@ -92,7 +92,7 @@ Aditionally, you will need to configure your Redmine's Database connection filli
 Here we show an example **assuming** that we have an **Redmine** listening in **localhost:8080** and that our user credentials are **user:"admin" pwd:"admin"**. We also **assume** that we have a database in **localhost:3307** and an user with credentials **user: root pwd: root** with CRUD privileges for a database named **"Redmine"**, which is our Redmine's database.
 
 <div align="center">
-![Redmine form](./../../../static/img/configuration/RedmineForm.png)  
+![Redmine form](/img/configuration/RedmineForm.png)  
 **Figure 3:** *Example of Redmine configuration in localhost.*
 </div>
 
@@ -101,7 +101,7 @@ Here we show an example **assuming** that we have an **Redmine** listening in **
 You can save this configuration by clicking of ***"Save"*** button. This will sava the data into your localstorage. This will ensure privacy because you can delete your configuration by cleaning you localstorage.
 
 <div align="center">
-![Saving configuration](./../../../static/img/configuration/savedButton.png)  
+![Saving configuration](/img/configuration/savedButton.png)  
 **Figure 4:** *Configuration saving confirmation.*
 </div>
 
@@ -110,6 +110,6 @@ In future versions you will be able to delete the configuration from Lucid chain
 </Disclaimer>
 
 <div align="center">
-![Connected tools](./../../../static/img/configuration/connected.png)  
+![Connected tools](/img/configuration/connected.png)  
 **Figure 5:** *Lucid chain connected to ITop and Redmine.*
 </div>

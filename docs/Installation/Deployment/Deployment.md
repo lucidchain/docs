@@ -67,7 +67,7 @@ In order to use Lucid chain infrastructure, you have to follow these steps:
     ```
 
     <div align="center">
-    ![Deploying with ngnx](./../../../static/img/installation/serverDeployMent.png)  
+    ![Deploying with ngnx](/img/installation/serverDeployMent.png)  
     **Figure 1:** *Deploy Lucid chain with ITop and Redmine.*
     </div>
 

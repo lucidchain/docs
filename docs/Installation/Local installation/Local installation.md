@@ -45,7 +45,7 @@ If you want to install locally ITop and Redmine too, you can do it all in one fo
     :::
 
     <div align="center">
-    ![Installing in docker](./../../../static/img/installation/dockerLucidChainResult.png)  
+    ![Installing in docker](/img/installation/dockerLucidChainResult.png)  
     **Figure 1:** *Lucid chain installed with ITop and Redmine using Docker.*
     </div>
 
@@ -96,7 +96,7 @@ If you are interested in having your own Lucid chain in local, and have access t
     :::
 
     <div align="center">
-    ![Run in local](./../../../static/img/installation/runningLocally.png)  
+    ![Run in local](/img/installation/runningLocally.png)  
     **Figure 2:** *Lucid chain installed running locally.*
     </div>
 
