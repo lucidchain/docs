@@ -1,3 +1,26 @@
+---
+tags:
+  - lucid-chain
+  - transactional
+  - data-management
+  - features
+keywords:
+  - database purging
+  - redmine cleanup
+  - itop cleanup
+  - transactional purge
+  - database management
+  - Lucid chain purge
+  - data deletion
+  - system cleanup
+  - irreversible action
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Purging database
 
 import Alert from '@site/src/components/Alert.js';

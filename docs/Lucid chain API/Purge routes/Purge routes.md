@@ -1,3 +1,29 @@
+---
+tags:
+  - lucid-chain
+  - api
+  - dangerous-operations
+  - development
+  - endpoints
+keywords:
+  - Lucid Chain purge routes
+  - purge database
+  - Redmine purge
+  - iTop purge
+  - database clearing
+  - dangerous purge operation
+  - Lucid Chain API usage
+  - purge endpoints
+  - redmine database
+  - itop database
+  - API purge operations
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Purge Routes
 
 import Alert from '@site/src/components/Alert.js';

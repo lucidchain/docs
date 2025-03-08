@@ -1,5 +1,29 @@
 ---
 sidebar_position: 3
+tags:
+  - lucid-chain
+  - deployment
+  - docker
+  - nginx
+  - setup
+  - docker-compose
+  - server-deployment
+keywords:
+  - Lucid Chain deployment
+  - Docker deployment
+  - nginx deployment
+  - Redmine and ITop
+  - infrastructure setup
+  - Docker Compose
+  - server setup
+  - Lucid Chain installation
+  - Docker commands
+  - port configuration
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
 ---
 
 # Deployment

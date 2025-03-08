@@ -1,3 +1,29 @@
+---
+tags:
+  - lucid-chain
+  - api
+  - service-chain
+  - endpoints
+  - mermaid-diagram
+  - yaml
+  - development
+keywords:
+  - Lucid Chain export routes
+  - service chain exportation
+  - export data from Redmine
+  - export data from ITop
+  - mermaid diagram export
+  - YAML export
+  - SCModel export
+  - API export routes
+  - Lucid Chain API usage
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Export routes
 
 import Alert from '@site/src/components/Alert.js';

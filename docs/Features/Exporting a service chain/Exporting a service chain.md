@@ -1,3 +1,31 @@
+---
+tags:
+  - lucid-chain
+  - service-chain
+  - YAML
+  - SCModel
+  - mermaid
+  - anonymize
+  - features
+keywords:
+  - export service chain
+  - Redmine export
+  - ITop export
+  - Redmine export
+  - YAML export
+  - SCModel notation
+  - service chain anonymize
+  - mermaid graph
+  - download YAML
+  - export tutorial
+  - export
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Exporting a service chain
 
 import Alert from '@site/src/components/Alert.js';

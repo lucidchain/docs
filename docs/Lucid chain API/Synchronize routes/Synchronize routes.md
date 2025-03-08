@@ -1,3 +1,30 @@
+---
+tags:
+  - lucid-chain
+  - api
+  - synchronization
+  - service-chain
+  - data-sync
+  - development
+  - endpoints
+keywords:
+  - Lucid Chain synchronization routes
+  - sync service chain
+  - Redmine synchronization
+  - iTop synchronization
+  - service chain comparison
+  - sync endpoints
+  - Redmine API
+  - iTop API
+  - service chain synchronization
+  - data synchronization API
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Synchronization Routes
 
 import Alert from '@site/src/components/Alert.js';

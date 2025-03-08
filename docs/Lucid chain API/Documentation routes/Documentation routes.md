@@ -1,3 +1,29 @@
+---
+tags:
+  - lucid-chain
+  - api
+  - endpoints
+  - service-chain
+  - restrictions
+  - api-documentation
+  - development
+keywords:
+  - Lucid Chain documentation
+  - API documentation routes
+  - README retrieval
+  - service chain constraints
+  - Lucid Chain API endpoints
+  - backend README
+  - retrieve README HTML
+  - API readme routes
+  - Lucid Chain API usage
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Documentation routes
 
 import Disclaimer from '@site/src/components/Disclaimer.js';

@@ -1,3 +1,29 @@
+---
+tags:
+  - lucid-chain
+  - api
+  - configuration
+  - endpoints
+  - setup
+  - integration
+  - development
+keywords:
+  - Lucid Chain configuration
+  - API configuration
+  - Redmine setup
+  - iTop configuration
+  - integration endpoints
+  - configuration API routes
+  - Lucid Chain endpoints
+  - API documentation
+  - Redmine API integration
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Configuration routes
 
 import Alert from '@site/src/components/Alert.js';

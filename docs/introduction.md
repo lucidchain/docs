@@ -1,5 +1,21 @@
 ---
 sidebar_position: 1
+tags: 
+  - lucid-chain
+  - service-chain
+  - ITSM
+keywords:
+  - Lucid Chain Wizard
+  - SCModel
+  - Service Chain
+  - ITSM tools
+  - SLA compliance
+  - Incident management
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
 ---
 
 # General Introduction

@@ -1,3 +1,30 @@
+---
+tags:
+  - lucid-chain
+  - service-chain
+  - YAML
+  - SCModel
+  - mermaid
+  - validation
+  - transactional
+  - features
+keywords:
+  - import service chain
+  - Redmine import
+  - ITop import
+  - YAML import
+  - SCModel validation
+  - service chain issues
+  - mermaid graph
+  - import tutorial
+  - transactional import
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Importing a service chain
 
 import Disclaimer from '@site/src/components/Disclaimer.js';

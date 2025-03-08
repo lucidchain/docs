@@ -1,3 +1,32 @@
+---
+tags:
+  - lucid-chain
+  - service-chain
+  - synchronization
+  - configuration
+  - update
+  - yaml
+  - SCModel
+  - transactional
+  - features
+keywords:
+  - service chain synchronization
+  - redmine synchronization
+  - itop synchronization
+  - update service chain
+  - yaml import
+  - SCModel configuration
+  - Lucid chain synchronization
+  - mermaid graph
+  - chain import
+  - configuration update
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Synchronizating a service chain
 
 import Alert from '@site/src/components/Alert.js';

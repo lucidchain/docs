@@ -1,3 +1,30 @@
+---
+tags:
+  - lucid-chain
+  - service-chain
+  - YAML
+  - SCModel
+  - validation
+  - mermaid
+  - service creation
+  - templates
+  - features
+keywords:
+  - create service chain
+  - YAML editor
+  - service chain templates
+  - SCModel validation
+  - mermaid diagrams
+  - import YAML
+  - export service chain YAML
+  - service chain creation tutorial
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Creating my service chain
 
 import Disclaimer from '@site/src/components/Disclaimer.js';

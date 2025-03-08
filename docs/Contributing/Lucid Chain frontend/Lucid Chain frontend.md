@@ -1,3 +1,26 @@
+---
+tags: 
+  - lucid-chain
+  - environment-variables
+  - routes
+  - configuration
+  - architecture
+keywords:
+  - Lucid Chain frontend
+  - Svelte project structure
+  - frontend components
+  - routing in Svelte
+  - environment variables
+  - BACKEND_API configuration
+  - npm scripts
+  - CI/CD frontend deployment
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Lucid chain frontend
 
 import Disclaimer from '@site/src/components/Disclaimer.js';

@@ -1,5 +1,24 @@
 ---
 sidebar_position: 1
+tags:
+  - lucid-chain
+  - introduction
+  - features
+keywords:
+  - Lucid Chain Wizard
+  - user guide
+  - navigation system
+  - throbber
+  - LCW features
+  - Lucid Chain usage
+  - ITop vs Redmine
+  - navigation buttons
+  - data retrieval
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
 ---
 
 # Introduction

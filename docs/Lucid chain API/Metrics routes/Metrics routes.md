@@ -1,3 +1,30 @@
+---
+tags:
+  - lucid-chain
+  - api
+  - sla
+  - service-metrics
+  - sla-metrics
+  - development
+  - endpoints
+keywords:
+  - Lucid Chain metrics routes
+  - SLA metrics
+  - global SLA metrics
+  - organization-specific SLA metrics
+  - service-specific SLA metrics
+  - Redmine SLA metrics
+  - ITop SLA metrics
+  - service metrics filters
+  - API metrics retrieval
+  - Lucid Chain API usage
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Metrics Routes
 
 import Alert from '@site/src/components/Alert.js';

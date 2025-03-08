@@ -1,3 +1,23 @@
+---
+tags: 
+  - lucid-chain
+  - architecture
+  - ITSM
+  - API
+keywords:
+  - Lucid Chain Wizard
+  - backend architecture
+  - Redmine integration
+  - service chain management
+  - environment variables
+  - API development
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Lucid chain backend
 
 import Disclaimer from '@site/src/components/Disclaimer.js';

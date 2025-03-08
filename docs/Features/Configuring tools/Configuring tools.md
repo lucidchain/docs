@@ -1,3 +1,27 @@
+---
+sidebar_position: 2
+tags:
+  - lucid-chain
+  - configuration
+  - API
+  - integration
+  - setup
+  - features
+keywords:
+  - Lucid Chain configuration
+  - Redmine integration
+  - ITop configuration
+  - API setup
+  - configuring tools
+  - Lucid Chain setup guide
+  - connecting Lucid Chain to tools
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Configuring tools
 
 In this section you will learn how to connect your Lucid chain instance to your Redmine and/or ITop.

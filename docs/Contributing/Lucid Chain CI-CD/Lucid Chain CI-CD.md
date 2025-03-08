@@ -1,3 +1,31 @@
+---
+tags: 
+  - lucid-chain
+  - CI/CD
+  - workflows
+  - versioning
+  - Docker
+  - semantic-versioning
+  - development
+  - commits
+keywords:
+  - Lucid Chain CI/CD
+  - continuous integration
+  - continuous deployment
+  - GitHub Actions
+  - Docker Image
+  - semantic versioning
+  - versioning
+  - commit policies
+  - branching methodology
+  - pull request policy
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Lucid chain CI/CD
 
 In this section you are going to learn how Lucid chain CI/CD works. You will also learn about other repository details such as releases and working methodology.

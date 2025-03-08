@@ -1,3 +1,31 @@
+---
+tags:
+  - lucid-chain
+  - SLA
+  - TTO
+  - TTR
+  - performance
+  - monitoring
+  - mermaid
+  - features
+keywords:
+  - SLA metrics
+  - Redmine metrics
+  - ITop metrics
+  - TTO TTR
+  - service chain performance
+  - Lucid chain metrics
+  - issue filtering
+  - mermaid graphs
+  - monitoring issues
+  - service analysis
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Metrics
 
 import Alert from '@site/src/components/Alert.js';

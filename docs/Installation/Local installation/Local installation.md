@@ -1,5 +1,32 @@
 ---
 sidebar_position: 2
+tags:
+  - lucid-chain
+  - installation
+  - docker
+  - repository-setup
+  - docker-compose
+  - server-setup
+  - development
+keywords:
+  - Lucid Chain installation
+  - Local installation
+  - Docker installation
+  - Docker Compose
+  - Redmine and ITop setup
+  - Local environment setup
+  - Dockerfile
+  - GitHub repository
+  - local development
+  - testing environment
+  - environment variables
+  - npm setup
+  - contributing
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
 ---
 
 # Local installation

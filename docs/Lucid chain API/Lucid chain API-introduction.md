@@ -1,5 +1,27 @@
 ---
 sidebar_position: 1
+tags:
+  - lucid-chain
+  - api
+  - swagger
+  - api-specifications
+  - development
+  - endpoints
+keywords:
+  - Lucid Chain API
+  - Lucid Chain frontend
+  - open API specifications
+  - Swagger API documentation
+  - using Lucid Chain API
+  - Redmine API
+  - iTop API
+  - Lucid Chain UI limitations
+  - Lucid Chain endpoints
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
 ---
 
 # Lucid chain API

@@ -1,3 +1,29 @@
+---
+tags:
+  - lucid-chain
+  - api
+  - service-chain
+  - mermaid-diagram
+  - upload
+  - development
+  - endpoints
+keywords:
+  - Lucid Chain import routes
+  - service chain importation
+  - import data to Redmine
+  - import data to ITop
+  - file upload for service chain
+  - JSON data import
+  - SCModel import
+  - API import routes
+  - Lucid Chain API usage
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Import Routes
 
 import Alert from '@site/src/components/Alert.js';
