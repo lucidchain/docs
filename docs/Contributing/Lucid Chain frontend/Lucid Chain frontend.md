@@ -11,7 +11,7 @@ keywords:
   - frontend components
   - routing in Svelte
   - environment variables
-  - BACKEND_API configuration
+  - VITE_BACKEND_API configuration
   - npm scripts
   - CI/CD frontend deployment
 authors: 
@@ -111,21 +111,21 @@ This directory is used to stablish and manage enviroment variables, global varia
 Now let's cover enviroment variables. If you see what is inside .env.example, you will see the following:
 
 ```.env
-BACKEND_API=
+VITE_BACKEND_API=
 ```
 
 Lets talk about them and see what they do.
 
-+ <u>**BACKEND_API:**</u> This is the url to Lucid chain`s backend API. ***Its default value is an empty string ('')***.
++ <u>**VITE_BACKEND_API:**</u> This is the url to Lucid chain`s backend API. ***Its default value is an empty string ('')***.
 
-### BACKEND_API use and sense (only for developers)
+### VITE_BACKEND_API use and sense (only for developers)
 
 We made a whole section about this enviroment variable because it is the weirdest of the project and it is a bit tricky to understand. By default its value is an empty string because in production mode Lucid chain's backend and frontend are on the same host, port and route. However, when you want to make changes in frontend, in order to make them visible in the same url ***(http://localhost:3000)***, you will have to run the command ***npm run build***. This is because of framework reasons and because of svelte handler is attached to the backend. Lets explain this better.
 
-Svelte's framework works transalating *.svelte* files to *html* code so browsers can understand everything. This process is called ***traspilation***. When you run the command ***npm run build*** you are making Svelte traspile your code, inject enviroment variables and creating all routing logic. This is stored in ***build*** folder. Why is it important? Because there is a special thing called "handler". This handler ensures the routing and redirection logic, and it is imported in ***app.js*** file in backend. This way you make backend and frontend run in the same port and host. It is very important to understand this because **all your changes will not be shown unless you run *npm run build* command**. As you can see, this is a problem when you want to add new features or you are making changes because it can be a little annoying. To fix this, you have an special command, which is ***npm run dev***. This command updates your frontend everytime you save a file or make a change (as nodemon does). However, there is another problem. ***Your frontend will be running in http://localhost:5173***. This will confuse Lucid chain because all the http requests will be made to ***localhost:5173*** instead of ***localhost:3000*** (the backend). To fix that, we have ***BACKEND_API*** variable. If you want to test your Lucid chain and watch it interact with the backend your frontend .env file ***must*** look like this:
+Svelte's framework works transalating *.svelte* files to *html* code so browsers can understand everything. This process is called ***traspilation***. When you run the command ***npm run build*** you are making Svelte traspile your code, inject enviroment variables and creating all routing logic. This is stored in ***build*** folder. Why is it important? Because there is a special thing called "handler". This handler ensures the routing and redirection logic, and it is imported in ***app.js*** file in backend. This way you make backend and frontend run in the same port and host. It is very important to understand this because **all your changes will not be shown unless you run *npm run build* command**. As you can see, this is a problem when you want to add new features or you are making changes because it can be a little annoying. To fix this, you have an special command, which is ***npm run dev***. This command updates your frontend everytime you save a file or make a change (as nodemon does). However, there is another problem. ***Your frontend will be running in http://localhost:5173***. This will confuse Lucid chain because all the http requests will be made to ***localhost:5173*** instead of ***localhost:3000*** (the backend). To fix that, we have ***VITE_BACKEND_API*** variable. If you want to test your Lucid chain and watch it interact with the backend your frontend .env file ***must*** look like this:
 
 ```.env
-BACKEND_API="http://localhost:3000"
+VITE_BACKEND_API="http://localhost:3000"
 ```
 
 This way you will make correct requests to your backend and you will be able to see all your changes without running ***npm run build***.
@@ -135,5 +135,5 @@ Please take into account that you will also need to have your Lucid chain in dev
 </Disclaimer>
 
 <Alert>
-In your local machine both production configuration and development configurations will work, but that ***DOES NOT MEAN*** it will work in your deployment enviroment. Please do not forget to set BACKEND_API to ***an empty string ("")*** when deploying Lucid chain. If you do not do that, your deployed frontend will make requests to the client's localhost:3000, and Lucid chain will not work. You should also set APP_MODE to ***prd*** in order to change app mode to production.
+In your local machine both production configuration and development configurations will work, but that ***DOES NOT MEAN*** it will work in your deployment enviroment. Please do not forget to set VITE_BACKEND_API to ***an empty string ("")*** when deploying Lucid chain. If you do not do that, your deployed frontend will make requests to the client's localhost:3000, and Lucid chain will not work. You should also set APP_MODE to ***prd*** in order to change app mode to production.
 </Alert>
