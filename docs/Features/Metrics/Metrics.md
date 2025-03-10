@@ -103,9 +103,19 @@ If any issues are shown, you will be able to see a lot of information about them
 
 + <u>***STATE:***</u> This column shows the current state of the issue. This is very usefull for service chain type state because you can kwno the service associated with it instantly.
 
+<div align="center">
+![Problematic open issue table with data](/img/metrics/problematicOpenIssueTableWithData.png)  
+**Figure 5:** *Problematic open issue table example.*
+</div>
+
 ### SLA passed pie chart
 
-If you go to the bottom, you will see some graphics. Now we are going to talk about these two pie charts.
+If you go to the bottom, you will see some graphics. We are going to talk first about the pie charts.
+
+<div align="center">
+![Global passed SLA graphics example](/img/metrics/SLAGlobalPieCharts.png)  
+**Figure 6:** *Global SLA pie charts example.*
+</div>
 
 The big pie chart contains a representation of the total TTO and TTR passed percentage of the issues of this month. Once you have your cursor in the pie chart, it will show you the exact values with two decimals. The other one, which is smaller, represents the same but taking into account the total percentage of issues that have passed TTO and TTR.
 
@@ -114,24 +124,31 @@ This pie charts only take into account closed issues. Moreover, if a issue is cl
 </Disclaimer>
 
 <div align="center">
-![Global passed SLA graphics](/img/metrics/SLAPieChartIdealSituation.png)  
-**Figure 5:** *Ideal situation where there all issues pass SLA.*
+![Global passed SLA graphics ideal situation](/img/metrics/SLAPieChartIdealSituation.png)  
+**Figure 7:** *Ideal situation where there all issues pass SLA.*
 </div>
 
 ### SLA passed last 6 months bar chart
 
 The right part of the bottom charts is a bar chart which represents the percentage of issues that passed TTO and TTR in the last six months. In each month, you can analyse TTO and TTR separately, and you can see one progress bar for each property. Moving the cursos in them will show you the exact number. You can also see the exact percentage in the begining of each progress bar. If there are no bars, it means that there are not issues in that month.
 
+<div align="center">
+![Issue bar chart example](/img/metrics/issueBarchartWithData.png)  
+**Figure 8:** *Issue bar chart example.*
+</div>
+
 <Disclaimer>
 This bar chart takes into account closed issues. Moreover, if a issue is closed while whatching this page and you do not reload it, data will not be updated.
 </Disclaimer>
 
 <div align="center">
-![Issue bar chart](/img/metrics/issueBarchart.png)  
-**Figure 6:** *Ideal situation where there all issues pass SLA.*
+![Issue bar chart ideal situation](/img/metrics/issueBarchart.png)  
+**Figure 9:** *Ideal situation where there all issues pass SLA.*
 </div>
 
+:::important
 <u>**NOTE:**</u> See how in Figure 6 there are a lot of 0% due to the lack of issues in the past months. This can also appear when you start to use Lucid chain metrics and your service chain is new. You will not have data because not enough time would have passed.
+:::
 
 ## Global Details
 
@@ -139,7 +156,7 @@ If you click on ***View details*** button, you will be redirected to global deta
 
 <div align="center">
 ![View details button](/img/metrics/viewDetailsButton.png)  
-**Figure 7:** *View details button.*
+**Figure 10:** *View details button.*
 </div>
 
 The first thing you will notice is that you will see again your mermaid graph representation of your chain. You can toggle it and also zoom in by clicking on the graph.
@@ -154,7 +171,7 @@ You will also see a component that contains all the filtering possibilities that
 
 <div align="center">
 ![Issue filter component](/img/metrics/ticketFilters.png)  
-**Figure 8:** *Issue filters component.*
+**Figure 11:** *Issue filters component.*
 </div>
 
 :::important
@@ -176,13 +193,18 @@ For a better filtering and more precission, you can use all these parameters at 
 Once you have decided you filter values do not forget to click in ***filter*** button in order to apply changes.
 </Disclaimer>
 
+<div align="center">
+![Issue table with filters](/img/metrics/globalDetails.png)  
+**Figure 12:** *Issue table only showing filtered issues.*
+</div>
+
 ### Issue table
 
 You will see below that filtering component a big table with a list of issues. Initially it contains all existings issues in your tool.
 
 <div align="center">
 ![Issue table](/img/metrics/issueTable.png)  
-**Figure 9:** *Issue table with only one issue.*
+**Figure 13:** *Issue table with only one issue.*
 </div>
 
 :::tip
@@ -206,12 +228,12 @@ In addition to the isssue table, you also have in the right two piecharts who sh
 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
 <div align="center">
 ![Ideal TTO pie chart](/img/metrics/TTOChart.png)  
-**Figure 10:** *Ideal situation where all issues pass TTO.*
+**Figure 14:** *Ideal situation where all issues pass TTO.*
 </div>
 
 <div align="center">
 ![Ideal TTR pie chart](/img/metrics/TTRChart.png)  
-**Figure 11:** *Ideal situation where all issues pass TTR.*
+**Figure 15:** *Ideal situation where all issues pass TTR.*
 </div>
 
 </div>
@@ -222,7 +244,7 @@ If you want to have a better look in some service's metrics, you have to go to *
 
 <div align="center">
 ![View service details](/img/metrics/viewServiceDetails.png)  
-**Figure 12:** *View service details button.*
+**Figure 16:** *View service details button.*
 </div>
 
 You will be redirected to a page identical to [Global details](#global-details). The difference here is that in the mermaid you will have the service highlighted in purple and the title will be *Service X Details*, being X the name of the selected service. The last difference is that the issues shown here will only belong to the selected service.
