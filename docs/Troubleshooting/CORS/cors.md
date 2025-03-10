@@ -1,3 +1,25 @@
+---
+sidebar_position: 2
+tags: 
+  - lucid-chain
+  - CORS
+  - troubleshooting
+  - vite
+  - set up
+  - development
+keywords:
+  - CORS error
+  - 405 Method Not Allowed
+  - env variables
+  - Vite
+  - backend API
+authors: 
+  - name: "Daniel Galván Cancio"
+    title: "Project Contributor"
+    url: "https://github.com/Dangalcan"
+    image_url: "https://avatars.githubusercontent.com/u/92941017"
+---
+
 # Cors
 
 import Disclaimer from '@site/src/components/Disclaimer.js';
