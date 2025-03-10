@@ -35,7 +35,7 @@ In this section you are going to learn what to do when you receive an error sayi
 If you are encountering this problem in your own Lucid chain instance, it is because it is trying yo start the server in port 3000 and it can not do it because this port is already in use. This means you will have to stop whatever is in port 3000 and then try again to run ***npm start*** in your Lucid chain's ***/back*** folder.
 
 <div align="center">
-![Port already in use problem](/img/troubleshooting/3000 PORT Already in use.png)  
+![Port already in use problem](/img/troubleshooting/3000-PORT-Already-in-use.png)  
 **Figure 1:** *Port already in use problem.*
 </div>
 
