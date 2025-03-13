@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'What is Lucid Chain Wizard?',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/lcw-logo-tiny.svg').default,
     description: (
       <>
       This tool allows you to migrate a service chain from iTop and Redmine without information loss.
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'What is SCModel?',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
     <>
       The SC Model (Service Chain Model) is a YAML file modelling language that contains a standardized description of a service chain.  
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Where can I find Lucid Chain Wizard?',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
         You can find Luid chain Wizard in its <a href="https://github.com/lucidchain/wizard" target="_blank" rel="noopener noreferrer">Github repository</a> or in <a href="https://hub.docker.com/r/lucidchain/lucidchain_wizard" target="_blank" rel="noopener noreferrer">Dockerhub</a>.
