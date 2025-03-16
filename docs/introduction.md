@@ -26,6 +26,15 @@ Let's discover what is **Lucid Chain Wizard**.
 
 Lucid chain wizard is a project designed to support and integrate SCModel into ITSM tools. SCModel is a service chain modelling language that makes it very easy to configure and understand service chains. Lucid chain allows you to import and export your service chains in both ITop and Redmine tools. It also provides detailed views about SLAs compliance and other service chain management features such as synchronizating your chain, creating and validaiting your own service chain, and much more.
 
+## What is Lucid chain
+
+Lucid chain is a software designed to make complex operations related to service chain with ease following SCModel standard. It supports import, export, SLA metrics and other features. It is a wizard that uses both ITop and Redmine APIs in order to simplify some processes and making easy to import and export service chains.
+
+<div align="center">
+![Lucid chain architecture](/img/mysc/LCWArchitecture.png)  
+**Figure 1:** *Lucid chain architecture.*
+</div>
+
 ## What is a service chain
 
 Service chains are relationships between organizations and the services they provide or pay for. These services usually have SLAs, which ensure some TTO and TTR compliance. You can learn more about service chains and about SCModel in [lucidchain specs](http://lucidchain.specs.governify.io/)

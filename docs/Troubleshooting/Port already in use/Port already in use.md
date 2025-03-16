@@ -91,7 +91,7 @@ This ovbiously changes your app port, so be carefull and ***change VITE_BACKEND_
 
 ### Adjust App execution to a subdomain
 
-This solution is more complex and consists in making Lucid chain run in ***http://localhost:3000/YourCustomRoute*** instead of in ***http://localhost:3000***. Usually this is not possible and can create many problems. For example, if you try to deploy Lucid docs in localhost:3000/docs and Lucid chain in localhost:3000, it will not work easily. You have to be cautious and depending on the contexts and your server architectura it can work.
+This solution is more complex and consists in making Lucid chain run in ***http://localhost:3000/YourCustomRoute*** instead of in ***http://localhost:3000***. Usually this is not possible and can create many problems. For example, if you try to deploy Lucid docs in localhost:3000/docs and Lucid chain in localhost:3000, it will not work easily. You have to be cautious and depending on the contexts and your server architecture it can work.
 
 :::tip
 It is much better configuring different DNS and having a proxy that redirects your HTTP requests, but also take into account that some Lucid chain enviroment variables may depend on other server configurations.
