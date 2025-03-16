@@ -42,3 +42,7 @@
   border-radius: 5px;
   display: inline-block;
 }
+
+.pagination-nav__sublabel {
+  display: none;
+}
