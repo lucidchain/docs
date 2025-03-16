@@ -31,7 +31,7 @@
   --color-last-updated: var(--ifm-color-primary);
 }
 
-.theme-last-updated time, b{
+.theme-last-updated time, .theme-last-updated b{
   font-size: 14px;
   color: var(--color-last-updated);
   font-weight: bold;
