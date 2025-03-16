@@ -25,7 +25,7 @@ authors:
 
 import Alert from '@site/src/components/Alert.js';
 
-This section is a detailed user guide for using LCW. You will find here every feature and how to use it, with recommendations and tips. Please do not forget to check troubleshooting in case you are having problems instead of trying to learn about the features
+This section is a detailed user guide for using LCW. You will find here every feature and how to use it, with recommendations and tips. Please do not forget to check [troubleshooting](../Troubleshooting/Troubleshooting-introduction.md) in case you are having problems instead of trying to learn about the features
 
 <Alert>
   Please take into account that Lucid chain is still in development so do not forget to check in the user guide if what you are looking for is currently supported
