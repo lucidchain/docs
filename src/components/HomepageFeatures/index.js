@@ -18,7 +18,7 @@ export default function HomepageFeatures() {
     },
     {
       title: 'What is SCModel?',
-      Svg: require('@site/static/img/YamlFileLogo.svg').default,
+      Svg: require('@site/static/img/SCModelLogo.svg').default,
       description: (
       <>
         The SC Model (Service Chain Model) is a YAML file modelling language that contains a standardized description of a service chain.  
