@@ -28,7 +28,7 @@ Lucid chain wizard is a project designed to support and integrate SCModel into I
 
 ## What is Lucid chain
 
-Lucid chain is a software designed to make complex operations related to service chain with ease following SCModel standard. It supports import, export, SLA metrics and other features. It is a wizard that uses both ITop and Redmine APIs in order to simplify some processes and making easy to import and export service chains.
+Lucid chain is a software designed to make complex operations related to service chain with ease following SCModel specification. It supports import, export, SLA metrics and other features. It is a wizard that uses both ITop and Redmine APIs in order to simplify some processes and making easy to import and export service chains.
 
 <div align="center">
 ![Lucid chain architecture](/img/mysc/LCWArchitecture.png)  

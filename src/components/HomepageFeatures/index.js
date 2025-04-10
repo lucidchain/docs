@@ -21,7 +21,7 @@ export default function HomepageFeatures() {
       Svg: require('@site/static/img/SCModelLogo.svg').default,
       description: (
       <>
-        The SC Model (Service Chain Model) is a YAML file modelling language that contains a standardized description of a service chain.  
+        The SC Model (Service Chain Model) is a YAML file modelling language that pretends to standardize service chain description.  
         See more details in <a href="http://lucidchain.specs.governify.io" target="_blank" rel="noopener noreferrer">SCModel official documentation</a>.
       </>
       ),
