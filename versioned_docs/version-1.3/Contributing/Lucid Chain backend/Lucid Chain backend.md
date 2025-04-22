@@ -25,7 +25,7 @@ import Disclaimer from '@site/src/components/Disclaimer.js';
 In this section we are going to learn how Lucid chain backend is structured. The first thing you can see when you enter the project, is that there are 2 parts very different from each other. The first one is ***back***. This folder contains all backend logic and the integrations with Redmine and ITop. The other one is ***front***, which contains all the frontend. Here you are about to explore *back* folder in order to understand its content. This is the most complex part of the application. It has a relatively well distributed system that integrates Redmine and ITop tools with an API in order to make them understand and support SCModel and other features. In the following sections we will describe each part.
 
 <div align="center">
-![Backend structure](/img/structure/backendStructure.png)  
+![Backend structure](/img/structure/backendStructureOLD.png)  
 **Figure 1:** *Lucid chain backend structure.*
 </div>
 
