@@ -61,7 +61,7 @@ Please do not forget to include Open API specifications in case you implement a 
 In ***services folder*** we have all the functions that use index.js from lucid-chain-tools. There is one service for each feature.
 
 <div align="center">
-![src structure](/img/structure/srcStructure.png)  
+![src structure](/img/structure/srcStructureOLD.png)  
 **Figure 3:** *src directory structure.*
 </div>
 

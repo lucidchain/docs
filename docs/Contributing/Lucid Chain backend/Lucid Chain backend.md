@@ -37,6 +37,7 @@ As you can see in ***Figure 1*** there are some files that are not in any of the
 + <u>**.env.example:**</u> This is a example of how your .env file should look like. We will cover enviroment variables later.
 + <u>**.gitignore:**</u> In this file we specify the files that we do not want git to track.
 + <u>**app.js:**</u> This is the main file. Here we have all the application logic an the connection to the frontend. It is very important to manipulate it with caution.
++ <u>**db.js:**</u> This is a very important file that creates a connection with Lucid chain's database, a **MongoDB** instance.
 + <u>**encripter.js:**</u> Here you can find all the encryption logic.
 + <u>**logger.js:**</u> This the application logger.
 + <u>**package.json:**</u> This file contains all the dependencies. There are some custom scripts in it.
@@ -55,11 +56,11 @@ Each sc-tool folder is designed with an object structure. Depending on the servi
 
 ### sc-itop directory
 
-Here we find all ITop logic, including importation, exportation and so on. Metrics are also here. There another 2 extra folders, one for ITop configuration and another one for ImportModel. The second one is almost deprecated.
+Here we find all ITop logic, including importation, exportation and so on. Metrics are also here. There another 2 extra folders, one for ITop configuration and another one for ImportModel. Both are almost deprecated and will be removed in the future.
 
 ### sc-redmine directory
 
-Here we find all Redmine logic, including importation, exportation and so on. Metrics are also here. There another 2 extra folders, one for Redmine configuration and another one for ImportModel. The second one is almost deprecated.
+Here we find all Redmine logic, including importation, exportation and so on. Metrics are also here. There another 2 extra folders, one for Redmine configuration and another one for ImportModel. Both are almost deprecated and will be removed in the future.
 
 ### shared directory
 
@@ -69,6 +70,10 @@ Here we can find SCModel validations and some common functions used in Redmine a
 ![lucid-chain-tools structure](/img/structure/lucid-chain-toolsStructure.png)  
 **Figure 2:** *lucid-chain-tools directory structure.*
 </div>
+
+## models directory
+
+This folder contains a file named ***User.js***, which defines Lucid chain's users. Here we only have one file because the database is very simple. In case you need to include more entities, add them here.
 
 ## src directory
 
@@ -81,7 +86,7 @@ Please do not forget to include Open API specifications in case you implement a 
 In ***services folder*** we have all the functions that use index.js from lucid-chain-tools. There is one service for each feature.
 
 <div align="center">
-![src structure](/img/structure/srcStructure.png)  
+![src structure](/img/structure/backendSrcStructure.png)  
 **Figure 3:** *src directory structure.*
 </div>
 
@@ -124,24 +129,18 @@ In future versinos Lucid chain will delete files when it finish working with the
 Now let's cover enviroment variables. If you see what is inside .env.example, you will see the following:
 
 ```.env
-LUCID_USERNAME=admin
-LUCID_PASSWORD=admin
 LOG_LEVEL=silly  ## LOG_LEVEL CAN BE: error > warn >  info > verbose > debug > silly
 NUM_DECIMALS=2  ## 2 is the recomended. The maximum is 5. More than that doesn't make sense
-APP_MODE=prd    ## APP_MODE can be dev or prd. In dev you dont need authentication, but in prod u do!
+JWT_SECRET=yourSecretJWT ## This env variable allows you to create secure json web tokens for lucidchain API users
+MONGO_URI=yourMongoDBURI ## This is your mondo db uri where lucid chain stores its users credentials.
 ```
 
 Lets talk about them and see what they do.
 
-+ <u>**LUCID_USERNAME:**</u> This is the username needed in order to have access to Lucid chain wizard. Its default value is ***admin***.
-+ <u>**LUCID_PASSWORD:**</u> This is the password of the user needed in order to have access to Lucid chain wizard. Its default value is ***admin***.
 + <u>**LOG_LEVEL:**</u> This variable specifies log level. Logs are distributed in ***layers***, so you when you assign a layer, only logs in that layer or in higher ones will be shown. There are six layers, hierchally represented like this: ***error > warn >  info > verbose > debug > silly***. ***By default LOG_LEVEL is silly***, so all logs will be shown. ***Recommended value is info***.
 + <u>**NUM_DECIMALS:**</u> This value represents the number of decimals that you want to be shown ***in the frontend***. By default its value is 2, and it is ***recommended to not change it***.
-+ <u>**APP_MODE:**</u> This variable defines the application mode. There are two modes: production (prd) and develoment (dev). ***In prodcution mode authentication is required***. This authentication must be done with ***LUCID_USERNAME and LUCID_PASSWORD credentials***. In developement mode we disable it for being able to run Vite dev mode. We will talk about that in frontend section.
-
-<Disclaimer>
-LUCID_USERNAME and LUCID_PASSWORD are mostly required in ***production enviroment***. Please make sure to change the default values for your safety.
-</Disclaimer>
++ <u>**JWT_SECRET:**</u> This is a secret token chosen by the system administrator, that is used to create JWT tokens. Please make it secure and keep it safe. An example of a secure token (do not use exactly this one) is: ***qwpeq242oriu4epwòqzqcnkjebv fw131eppweqmz4skcdp34heu4wndxz***.
++ <u>**MONGO_URI:**</u> This is the MongoDB url that contains the MongoDB instance for using Lucid chain¡s database. We recommend using ***mongodb://localhost:27017/lucidchain*** in local enviroment.
 
 <Disclaimer>
 Please take into account that if you are using Lucid chain in a server that already has a LOG_LEVEL defined, ***Lucid chain LOG_LEVEL enviroment variable can be ignored and substituted by the server's one***. This can also happen with the max request body size allowed.
