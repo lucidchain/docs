@@ -29,6 +29,9 @@ authors:
 
 import Disclaimer from '@site/src/components/Disclaimer.js';
 import Alert from '@site/src/components/Alert.js';
+import LogInRequired from '@site/src/components/LoginRequired.js'
+
+<LogInRequired/>
 
 In this section you will learn how to import in ITop and/or Redmine your service chain.
 

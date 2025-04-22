@@ -29,6 +29,9 @@ authors:
 # Exporting a service chain
 
 import Alert from '@site/src/components/Alert.js';
+import LogInRequired from '@site/src/components/LoginRequired.js'
+
+<LogInRequired/>
 
 In this section you will learn how to export your Redmine and/or ITop service chain and have it in a yaml file following SCModel notation.
 

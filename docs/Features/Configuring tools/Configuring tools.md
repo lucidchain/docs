@@ -23,9 +23,12 @@ authors:
 
 # Configuring tools
 
-In this section you will learn how to connect your Lucid chain instance to your Redmine and/or ITop.
-
 import Disclaimer from '@site/src/components/Disclaimer.js';
+import LogInRequired from '@site/src/components/LoginRequired.js'
+
+<LogInRequired/>
+
+In this section you will learn how to connect your Lucid chain instance to your Redmine and/or ITop.
 
 <Disclaimer>
 Lucid chain only supports configuration for **Redmine and ITop**. Any other Service management tool is not available for configuration yet.

@@ -30,6 +30,9 @@ authors:
 
 import Alert from '@site/src/components/Alert.js';
 import Disclaimer from '@site/src/components/Disclaimer.js';
+import LogInRequired from '@site/src/components/LoginRequired.js'
+
+<LogInRequired/>
 
 In this section you will learn about Lucid chain SLA metrics and how to interpret them.
 
