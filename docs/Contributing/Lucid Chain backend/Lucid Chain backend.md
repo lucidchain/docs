@@ -37,7 +37,6 @@ As you can see in ***Figure 1*** there are some files that are not in any of the
 + <u>**.env.example:**</u> This is a example of how your .env file should look like. We will cover enviroment variables later.
 + <u>**.gitignore:**</u> In this file we specify the files that we do not want git to track.
 + <u>**app.js:**</u> This is the main file. Here we have all the application logic an the connection to the frontend. It is very important to manipulate it with caution.
-+ <u>**db.js:**</u> This is a very important file that creates a connection with Lucid chain's database, a **MongoDB** instance.
 + <u>**encripter.js:**</u> Here you can find all the encryption logic.
 + <u>**logger.js:**</u> This the application logger.
 + <u>**package.json:**</u> This file contains all the dependencies. There are some custom scripts in it.
@@ -132,7 +131,6 @@ Now let's cover enviroment variables. If you see what is inside .env.example, yo
 LOG_LEVEL=silly  ## LOG_LEVEL CAN BE: error > warn >  info > verbose > debug > silly
 NUM_DECIMALS=2  ## 2 is the recomended. The maximum is 5. More than that doesn't make sense
 JWT_SECRET=yourSecretJWT ## This env variable allows you to create secure json web tokens for lucidchain API users
-MONGO_URI=yourMongoDBURI ## This is your mondo db uri where lucid chain stores its users credentials.
 ```
 
 Lets talk about them and see what they do.
@@ -140,7 +138,6 @@ Lets talk about them and see what they do.
 + <u>**LOG_LEVEL:**</u> This variable specifies log level. Logs are distributed in ***layers***, so you when you assign a layer, only logs in that layer or in higher ones will be shown. There are six layers, hierchally represented like this: ***error > warn >  info > verbose > debug > silly***. ***By default LOG_LEVEL is silly***, so all logs will be shown. ***Recommended value is info***.
 + <u>**NUM_DECIMALS:**</u> This value represents the number of decimals that you want to be shown ***in the frontend***. By default its value is 2, and it is ***recommended to not change it***.
 + <u>**JWT_SECRET:**</u> This is a secret token chosen by the system administrator, that is used to create JWT tokens. Please make it secure and keep it safe. An example of a secure token (do not use exactly this one) is: ***qwpeq242oriu4epwòqzqcnkjebv fw131eppweqmz4skcdp34heu4wndxz***.
-+ <u>**MONGO_URI:**</u> This is the MongoDB url that contains the MongoDB instance for using Lucid chain¡s database. We recommend using ***mongodb://localhost:27017/lucidchain*** in local enviroment.
 
 <Disclaimer>
 Please take into account that if you are using Lucid chain in a server that already has a LOG_LEVEL defined, ***Lucid chain LOG_LEVEL enviroment variable can be ignored and substituted by the server's one***. This can also happen with the max request body size allowed.
