@@ -39,7 +39,7 @@ In this section you will learn about metrics endpoints. This is by far the most 
 Using Lucid chain API is not recommended since its intention is to be managed by Lucid chain frontend. Please be aware that a bad use can cause problems in your Redmine or your ITop and we will not take that responsability. Be really sure of what you are doing and always check Open API Specifications, and other official documentation before proceding.  
 </Alert>
 
-## POST `/sla-metrics/:target/global`
+## POST `/api/sla-metrics/:target/global`
 
 Retrieves global SLA metrics for the targeted tool. It can be ITop or Redmine. It fetches global metrics for the specified target using the provided filters and service type.
 
@@ -86,7 +86,7 @@ Retrieves global SLA metrics for the targeted tool. It can be ITop or Redmine. I
 - **Content-Type:** `text/plain`
 - **Example:**  `"Error getting global metrics from {target} with service_type {serviceType}: ..."`
 
-## POST `/sla-metrics/:target/metrics/orgs/:teamId`
+## POST `/api/sla-metrics/:target/metrics/orgs/:teamId`
 
 This route retrieves the SLA metrics of the targeted tool specified organization team.
 
@@ -128,7 +128,7 @@ This route retrieves the SLA metrics of the targeted tool specified organization
 - **Content-Type:** `text/plain`
 - **Example:** `"Error retrieving metrics for organization {teamId} from {target}: ..."`
 
-## POST `/sla-metrics/:target/metrics/services/:serviceId`
+## POST `/api/sla-metrics/:target/metrics/services/:serviceId`
 
 Retrieves service-specific SLA metrics for the specified serice of your targeted tool appliying given filters.
 

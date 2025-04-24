@@ -38,7 +38,7 @@ Using Lucid chain API is not recommended since its intention is to be managed by
 Please take into account that service chain type state is not supported in ITop yet, and service chain type faceted is not fully supported on Redmine. We are sorry for that but in future versions this will be fixed.
 </Alert>
 
-## POST `/import/upload`
+## POST `/api/import/upload`
 
 This route is used when uploading a file for importing a service chain and generating a mermaid diagram. It also validates it following SCModel. Returns the file content, import information, and any validation errors.
 
@@ -91,7 +91,7 @@ This route is used when uploading a file for importing a service chain and gener
     - `message` (`string`): Error message when an internal server error occurs.  
       **Example:** `"There was an error during the upload."`
 
-## POST `/import/itop`
+## POST `/api/import/itop`
 
 This route allows you to import service chains into ITop. It imports data to ITop from a JSON payload. Returns success or errors encountered during the importation.
 
@@ -127,7 +127,7 @@ This route allows you to import service chains into ITop. It imports data to ITo
     - `error` (`string`): Error message.  
       **Example:** `"Error importing on iTop: Invalid credentials."`
 
-## POST `/import/redmine`
+## POST `/api/import/redmine`
 
 This route allows you to import service chains into Redmine. It imports data to Redmine from a JSON payload. Returns success or errors encountered during the importation.
 

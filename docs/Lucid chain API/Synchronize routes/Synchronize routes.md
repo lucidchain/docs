@@ -39,7 +39,7 @@ Using Lucid chain API is not recommended since its intention is to be managed by
 Please take into account that service chain type state is not supported in ITop yet, and service chain type faceted is not fully supported on Redmine. We are sorry for that but in future versions this will be fixed.
 </Alert>
 
-## POST `/sync/comparationInfo`
+## POST `/api/sync/comparationInfo`
 
 This route compares the new version of the current service chain imported in your tool and generates a comparison report. It compares the actual chain with an uploaded chain to identify differences, potential synchronization, and generates a mermaid diagram if there are no errors.
 
@@ -82,7 +82,7 @@ This route compares the new version of the current service chain imported in you
   - **Type:** `string`
   - **Example:** `"There was an error comparating info: Internal Server Error."`
 
-## POST `/sync/redmine`
+## POST `/api/sync/redmine`
 
 This route synchronizes the provided service chain data to Redmine using the specified service type.
 
@@ -120,7 +120,7 @@ This route synchronizes the provided service chain data to Redmine using the spe
     - `message` (`string`): The error message.  
       **Example:** `"There was an error while synchronizing in Redmine: Invalid credentials"`
 
-## POST `/sync/iTop`
+## POST `/api/sync/iTop`
 
 This route synchronizes the provided service chain data to ITop using the specified service type.
 

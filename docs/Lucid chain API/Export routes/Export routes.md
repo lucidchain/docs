@@ -34,7 +34,7 @@ In this section, you will discover all the endpoints related to service chain ex
 Using Lucid chain API is not recommended since its intention is to be managed by Lucid chain frontend. Please be aware that a bad use can cause problems in your Redmine or your ITop and we will not take that responsability. Be really sure of what you are doing and always check Open API Specifications, and other official documentation before proceding.  
 </Alert>
 
-## POST `/export/:target/getChain`
+## POST `/api/export/:target/getChain`
 
 This route exports data from a target and generates a mermaid diagram that represents your service chain in the targeted tool. Target can be ITop or Redmine.
 
@@ -85,7 +85,7 @@ This route exports data from a target and generates a mermaid diagram that repre
 - **Content-Type:** `text/plain`
 - **Example:**  `"Error exporting on target: itop"`
 
-## POST `/export/itop`
+## POST `/api/export/itop`
 
 Exports your service chain data from iTop and returns the result as a YAML file following SCModel.
 
@@ -121,7 +121,7 @@ Exports your service chain data from iTop and returns the result as a YAML file 
 - **Content-Type:** `text/plain`
 - **Example:**  `"Error exporting from iTop: ..."`
 
-## POST `/export/redmine`
+## POST `/api/export/redmine`
 
 Exports your service chain data from Redmine and returns the result as a YAML file following SCModel.
 

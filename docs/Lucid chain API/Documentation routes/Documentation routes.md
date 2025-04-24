@@ -39,7 +39,7 @@ These endpoints described here are ***NOT*** part of this docusaurus project. Th
 Using Lucid chain API is not recommended since its intention is to be managed by Lucid chain frontend. Please be aware that a bad use can cause problems in your Redmine or your ITop and we will not take that responsability. Be really sure of what you are doing and always check Open API Specifications, and other official documentation before proceding.  
 </Alert>
 
-## GET `/about`
+## GET `/api/about`
 
 This route retrieve the entire backend`s README file as HTML. It Rrads the entire README file and returns its content as an HTML response.
 
@@ -60,7 +60,7 @@ This route retrieve the entire backend`s README file as HTML. It Rrads the entir
   - **Description:** Error message when the file cannot be read.
   - **Example:** `"Error reading the file: ..."`
 
-## GET `/info/restrictions`
+## GET `/api/info/restrictions`
 
 This route retrieves service chain constraints section from backend's README file. It reads the README file, extracts the section titled "Service Chain Constraints," and returns it as HTML.
 
