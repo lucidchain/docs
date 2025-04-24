@@ -38,6 +38,11 @@ Using Lucid chain API is not recommended since its intention is to be managed by
 
 This route exports data from a target and generates a mermaid diagram that represents your service chain in the targeted tool. Target can be ITop or Redmine.
 
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
+
 ### Path Parameters
 
 | Name   | Type   | Required/Optional | Description |
@@ -84,6 +89,11 @@ This route exports data from a target and generates a mermaid diagram that repre
 
 Exports your service chain data from iTop and returns the result as a YAML file following SCModel.
 
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
+
 ### Request Body
 
 - **Required:** `true`
@@ -114,6 +124,11 @@ Exports your service chain data from iTop and returns the result as a YAML file 
 ## POST `/export/redmine`
 
 Exports your service chain data from Redmine and returns the result as a YAML file following SCModel.
+
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
 
 ### Request Body
 

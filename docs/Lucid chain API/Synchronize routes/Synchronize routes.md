@@ -43,6 +43,11 @@ Please take into account that service chain type state is not supported in ITop 
 
 This route compares the new version of the current service chain imported in your tool and generates a comparison report. It compares the actual chain with an uploaded chain to identify differences, potential synchronization, and generates a mermaid diagram if there are no errors.
 
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
+
 ### Request Body
 
 - **Required:** `true`
@@ -81,6 +86,11 @@ This route compares the new version of the current service chain imported in you
 
 This route synchronizes the provided service chain data to Redmine using the specified service type.
 
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
+
 ### Request Body
 
 - **Required:** `true`
@@ -113,6 +123,11 @@ This route synchronizes the provided service chain data to Redmine using the spe
 ## POST `/sync/iTop`
 
 This route synchronizes the provided service chain data to ITop using the specified service type.
+
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
 
 ### Request Body
 

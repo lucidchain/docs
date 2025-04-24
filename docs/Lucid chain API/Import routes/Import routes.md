@@ -42,6 +42,11 @@ Please take into account that service chain type state is not supported in ITop 
 
 This route is used when uploading a file for importing a service chain and generating a mermaid diagram. It also validates it following SCModel. Returns the file content, import information, and any validation errors.
 
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
+
 ### Request Body
 
 - **Required:** `true`
@@ -90,6 +95,11 @@ This route is used when uploading a file for importing a service chain and gener
 
 This route allows you to import service chains into ITop. It imports data to ITop from a JSON payload. Returns success or errors encountered during the importation.
 
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
+
 ### Request Body
 
 - **Required:** `true`
@@ -120,6 +130,11 @@ This route allows you to import service chains into ITop. It imports data to ITo
 ## POST `/import/redmine`
 
 This route allows you to import service chains into Redmine. It imports data to Redmine from a JSON payload. Returns success or errors encountered during the importation.
+
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
 
 ### Request Body
 

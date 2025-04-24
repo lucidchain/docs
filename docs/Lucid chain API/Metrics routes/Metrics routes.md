@@ -18,6 +18,10 @@ keywords:
   - service metrics filters
   - API metrics retrieval
   - Lucid Chain API usage
+  - TTO
+  - TTR
+  - Problematic open issues
+  - SLA compliance
 authors: 
   - name: "Daniel Galván Cancio"
     title: "Project Contributor"
@@ -38,6 +42,11 @@ Using Lucid chain API is not recommended since its intention is to be managed by
 ## POST `/sla-metrics/:target/global`
 
 Retrieves global SLA metrics for the targeted tool. It can be ITop or Redmine. It fetches global metrics for the specified target using the provided filters and service type.
+
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
 
 ### Path Parameters
 
@@ -81,6 +90,11 @@ Retrieves global SLA metrics for the targeted tool. It can be ITop or Redmine. I
 
 This route retrieves the SLA metrics of the targeted tool specified organization team.
 
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
+
 ### Path Parameters
 
 | Name     | Type   | Required/Optional | Description |
@@ -117,6 +131,11 @@ This route retrieves the SLA metrics of the targeted tool specified organization
 ## POST `/sla-metrics/:target/metrics/services/:serviceId`
 
 Retrieves service-specific SLA metrics for the specified serice of your targeted tool appliying given filters.
+
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
 
 ### Path Parameters
 
@@ -166,6 +185,11 @@ Retrieves service-specific SLA metrics for the specified serice of your targeted
 ## GET `/api/sla-metrics/:target/:service_type/issuesPassingSLA`
 
 This route retrieves the list of issues that have passed their SLA compliance (both TTO and TTR) for a specified target system and service chain type. It supports optional date filtering via query parameters.
+
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
 
 ### Path Parameters
 
@@ -218,6 +242,11 @@ This route retrieves the list of issues that have passed their SLA compliance (b
 ## GET `/api/sla-metrics/:target/:service_type/issuesPassingTTO`
 
 This route retrieves the list of issues that have passed TTO for a specified target system and service chain type. It supports optional date filtering via query parameters.
+
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
 
 ### Path Parameters
 
@@ -272,6 +301,11 @@ This route retrieves the list of issues that have passed TTO for a specified tar
 
 This route retrieves the list of issues that have passed TTR for a specified target system and service chain type. It supports optional date filtering via query parameters.
 
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
+
 ### Path Parameters
 
 | Name           | Type   | Required/Optional | Description |
@@ -324,6 +358,11 @@ This route retrieves the list of issues that have passed TTR for a specified tar
 
 This route retrieves **all issues** that are part of the service chain defined by the given `target` system and `service_type`. It supports optional date filters via query parameters.
 
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
+
 ### Path Parameters
 
 | Name           | Type   | Required/Optional | Description |
@@ -373,6 +412,11 @@ This route retrieves **all issues** that are part of the service chain defined b
 ## GET `/api/sla-metrics/:target/:service_type/problematicOpenIssues`
 
 This route retrieves all **problematic open issues** that are part of the service chain defined by the given `target` system and `service_type`. It supports optional date filters via query parameters. ***Problematic open issues are the ones that do not pass TTO or TTR and are not closed yet.***
+
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
 
 ### Path Parameters
 

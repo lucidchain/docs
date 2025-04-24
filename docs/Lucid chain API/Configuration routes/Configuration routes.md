@@ -38,6 +38,11 @@ Using Lucid chain API is not recommended since its intention is to be managed by
 
 This route stores or updates the configuration details for a given target system (`redmine` or `itop`) for the authenticated user. It includes connection settings and, for Redmine, optional database credentials.
 
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
+
 ### Path Parameters
 
 | Name     | Type    | Required/Optional | Description |
@@ -94,6 +99,11 @@ This route stores or updates the configuration details for a given target system
 ## POST `/api/config`
 
 This route validates the stored credentials for the specified target (`itop` or `redmine`). It checks whether the saved configuration is sufficient to perform all Lucid Chain operations for that target.
+
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
 
 ### Query Parameters
 

@@ -38,6 +38,11 @@ Using Lucid chain API is not recommended since its intention is to be managed by
 
 This route purges the database of the targeted tool (`itop` or `redmine`) based on the data provided in the request body.
 
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
+
 ### Path Parameters
 
 | Name    | Type   | Required/Optional | Description |
