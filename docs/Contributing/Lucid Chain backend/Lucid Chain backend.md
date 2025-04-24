@@ -11,6 +11,8 @@ keywords:
   - service chain management
   - environment variables
   - API development
+  - Datamodel
+  - Database
 authors: 
   - name: "Daniel Galván Cancio"
     title: "Project Contributor"
@@ -142,3 +144,6 @@ Lets talk about them and see what they do.
 <Disclaimer>
 Please take into account that if you are using Lucid chain in a server that already has a LOG_LEVEL defined, ***Lucid chain LOG_LEVEL enviroment variable can be ignored and substituted by the server's one***. This can also happen with the max request body size allowed.
 </Disclaimer>
+
+## Data model
+
