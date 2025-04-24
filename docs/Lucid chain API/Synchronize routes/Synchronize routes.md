@@ -88,16 +88,6 @@ This route synchronizes the provided service chain data to Redmine using the spe
 - **Schema:**
   - **Type:** `object`
   - **Properties:**
-    - `server` (`string`): The Redmine server address.  
-      **Example:** `"redmine.example.com"`
-    - `port` (`integer`): The port of the Redmine server.  
-      **Example:** `8080`
-    - `api_path` (`string`): The API path of the Redmine server.  
-      **Example:** `"/redmine/api"`
-    - `username` (`string`): The username for Redmine authentication.  
-      **Example:** `"admin"`
-    - `password` (`string`): The password for Redmine authentication.  
-      **Example:** `"password123"`
     - `uploadedChain` (`object`): The chain data to be synchronized to Redmine.
     - `serviceType` (`string`): The type of service chain to synchronize.  
       **Allowed values:** `faceted`, `state`
@@ -131,16 +121,6 @@ This route synchronizes the provided service chain data to ITop using the specif
 - **Schema:**
   - **Type:** `object`
   - **Properties:**
-    - `server` (`string`): The iTop server address.  
-      **Example:** `"iTop.example.com"`
-    - `port` (`integer`): The port of the iTop server.  
-      **Example:** `8080`
-    - `api_path` (`string`): The API path of the iTop server.  
-      **Example:** `"/iTop/api"`
-    - `username` (`string`): The username for iTop authentication.  
-      **Example:** `"admin"`
-    - `password` (`string`): The password for iTop authentication.  
-      **Example:** `"password123"`
     - `uploadedChain` (`object`): The chain data to be synchronized to iTop.
     - `serviceType` (`string`): The type of service chain to synchronize.  
       **Allowed values:** `faceted`, `state`

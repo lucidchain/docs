@@ -51,16 +51,6 @@ This route exports data from a target and generates a mermaid diagram that repre
 - **Schema:**
   - **Type:** `object`
   - **Properties:**
-    - `server` (`string`): The server address of the target system.  
-      **Example:** `"localhost"`
-    - `port` (`integer`): The port of the target system.  
-      **Example:** `8080`
-    - `api_path` (`string`): The API path of the target system.  
-      **Example:** `"/api/v1"`
-    - `username` (`string`): The username for authentication.  
-      **Example:** `"admin"`
-    - `password` (`string`): The password for authentication.  
-      **Example:** `"password123"`
     - `anonimized` (`boolean`): Indicates if the exported data should be anonymized.  
       **Example:** `true`
     - `service_type` (`string`): The type of service chain to export.  
@@ -101,16 +91,6 @@ Exports your service chain data from iTop and returns the result as a YAML file 
 - **Schema:**
   - **Type:** `object`
   - **Properties:**
-    - `server` (`string`): The server address of the iTop system.  
-      **Example:** `"localhost"`
-    - `port` (`integer`): The port of the iTop system.  
-      **Example:** `8080`
-    - `api_path` (`string`): The API path of the iTop system.  
-      **Example:** `"/webservices/rest.php"`
-    - `username` (`string`): The username for authentication.  
-      **Example:** `"admin"`
-    - `password` (`string`): The password for authentication.  
-      **Example:** `"password123"`
     - `anonimized` (`boolean`): Indicates if the exported data should be anonymized.  
       **Example:** `true`
     - `service_type` (`string`): The type of service chain to export from iTop.  
@@ -142,16 +122,6 @@ Exports your service chain data from Redmine and returns the result as a YAML fi
 - **Schema:**
   - **Type:** `object`
   - **Properties:**
-    - `server` (`string`): The server address of the Redmine system.  
-      **Example:** `"localhost"`
-    - `port` (`integer`): The port of the Redmine system.  
-      **Example:** `8080`
-    - `api_path` (`string`): The API path of the Redmine system.  
-      **Example:** `"/webservices/rest.php"`
-    - `username` (`string`): The username for authentication.  
-      **Example:** `"admin"`
-    - `password` (`string`): The password for authentication.  
-      **Example:** `"password123"`
     - `anonimized` (`boolean`): Indicates if the exported data should be anonymized.  
       **Example:** `true`
     - `service_type` (`string`): The type of service chain to export from Redmine.  

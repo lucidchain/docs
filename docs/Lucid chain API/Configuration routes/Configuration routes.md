@@ -34,15 +34,15 @@ In this section you are going to discover all the endpoints related with configu
 Using Lucid chain API is not recommended since its intention is to be managed by Lucid chain frontend. Please be aware that a bad use can cause problems in your Redmine or your ITop and we will not take that responsability. Be really sure of what you are doing and always check Open API Specifications, and other official documentation before proceding.  
 </Alert>
 
-## POST `/config`
+## POST `/api/configure/:target`
 
-This route allows you to configure your ITop and your Redmine. It sets configuration and checks credentials in order to make other operations. You can also include Redmine database credentials in it.
+This route stores or updates the configuration details for a given target system (`redmine` or `itop`) for the authenticated user. It includes connection settings and, for Redmine, optional database credentials.
 
-### Query Parameters
+### Path Parameters
 
-| Name    | Type   | Required/Optional | Description |
-|---------|--------|----------|-------------|
-| `target` | `string` | **Required** | The target system to configure. Allowed values: `"itop"`, `"redmine"` |
+| Name     | Type    | Required/Optional | Description |
+|----------|---------|-------------------|-------------|
+| `target` | `string`  | **Required**      | The target system to configure. Allowed values: `"itop"`, `"redmine"` |
 
 ### Request Body
 
@@ -51,39 +51,69 @@ This route allows you to configure your ITop and your Redmine. It sets configura
 - **Schema:**
   - **Type:** `object`
   - **Properties:**
-    - `server` (string): The server address.  
-        *Example:* `"localhost"`
-    - `port` (integer): The server port.  
-        *Example:* `8080`
-    - `api_path` (string): The API path.  
-        *Example:* `"/api"`
-    - `username` (string): The username for authentication.  
-        *Example:* `"admin"`
-    - `password` (string): The password for authentication.  
-        *Example:* `"password123"`
-    - `db_host` (string): The Redmine database host. Required if the target is 'redmine'.  
-        *Example:* `"localhost"`
-    - `db_port` (integer): The Redmine database port. Required if the target is 'redmine'.  
-        *Example:* `5432`
-    - `db_user` (string): The Redmine database username. Required if the target is 'redmine'.  
-        *Example:* `"dbuser"`
-    - `db_password` (string): The Redmine database password. Required if the target is 'redmine'.  
-        *Example:* `"dbpassword123"`
-    - `database` (string): The Redmine database name. Required if the target is 'redmine'.  
-        *Example:* `"redmine_db"`
+    - `redmineConfig` (object): Configuration for Redmine.  
+      *Example:*
+      ```json
+      {
+        "server": "localhost",
+        "port": 3000,
+        "api_path": "/redmine",
+        "username": "admin",
+        "password": "redminePass",
+        "dbhost": "localhost",
+        "dbport": 5432,
+        "dbuser": "postgres",
+        "dbpassword": "postgresPass",
+        "dbname": "redmine"
+      }
+      ```
+    - `itopConfig` (object): Configuration for iTop.  
+      *Example:*
+      ```json
+      {
+        "server": "localhost",
+        "port": 8080,
+        "api_path": "/webservices/rest.php",
+        "username": "admin",
+        "password": "itopPass"
+      }
+      ```
 
 ### Responses
 
-#### ✅ 200 - Configuration set successfully
+#### ✅ 200 - Configuration updated successfully
 
-- **Content-Type:** `text/plain`
+- **Content-Type:** `text/plain`  
+- **Example:** `"Configuration updated successfully"`
+
+#### ❌ 500 - Server error during configuration update
+
+- **Content-Type:** `text/plain`  
+- **Example:** `"There was an error updating configuration: ..."`
+
+## POST `/api/config`
+
+This route validates the stored credentials for the specified target (`itop` or `redmine`). It checks whether the saved configuration is sufficient to perform all Lucid Chain operations for that target.
+
+### Query Parameters
+
+| Name     | Type    | Required/Optional | Description |
+|----------|---------|-------------------|-------------|
+| `target` | string  | **Required**      | The target system to validate credentials against. Allowed values: `"itop"`, `"redmine"` |
+
+### Request Body
+
+- **Required:** `false`
+- No body is required for this request.
+
+### Responses
+
+#### ✅ 200 - Credentials validated successfully
+
+- **Content-Type:** `text/plain`  
 - **Example:** `"OK"`
 
-#### ❌ 500 - Server error
+#### ❌ 500 - Server error during credential validation
 
-- **Content-Type:** `application/json`
-- **Schema:**
-  - **Type:** `object`
-  - **Properties:**
-    - `message` (`string`):  
-      **Example:** `"Internal server error"`
+- **Content-Type:** `text/plain`  
+- **Example:** `"There was an error checking credentials: ..."`

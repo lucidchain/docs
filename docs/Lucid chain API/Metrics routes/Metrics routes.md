@@ -95,18 +95,6 @@ This route retrieves the SLA metrics of the targeted tool specified organization
 - **Schema:**
   - **Type:** `object`
   - **Properties:**
-    - `config` (`object`): Configuration parameters for connecting to the target system.  
-      **Properties:**
-      - `server` (`string`): The server address of the system.  
-        **Example:** `"localhost"`
-      - `port` (`integer`): The port of the system.  
-        **Example:** `8080`
-      - `api_path` (`string`): The API path of the system.  
-        **Example:** `"/webservices/rest.php"`
-      - `username` (`string`): The username for authentication.  
-        **Example:** `"admin"`
-      - `password` (`string`): The password for authentication.  
-        **Example:** `"password123"`
     - `service_type` (`string`): The type of service chain to export.  
       **Allowed values:** `faceted`, `state`
 
@@ -150,18 +138,6 @@ Retrieves service-specific SLA metrics for the specified serice of your targeted
       - `end_date` (`string`, `date`): Filters metrics created before the specified date.
       - `tto_threshold` (`number`): Filters metrics with a TTO over the specified value.
       - `ttr_threshold` (`number`): Filters metrics with a TTR over the specified value.
-    - `config` (`object`): Configuration parameters for connecting to the target system.  
-      **Properties:**
-      - `server` (`string`): The server address of the target system.  
-        **Example:** `"localhost"`
-      - `port` (`integer`): The port of the target system.  
-        **Example:** `8080`
-      - `api_path` (`string`): The API path of the target system.  
-        **Example:** `"/webservices/rest.php"`
-      - `username` (`string`): The username for authentication.  
-        **Example:** `"admin"`
-      - `password` (`string`): The password for authentication.  
-        **Example:** `"password123"`
     - `service_type` (`string`): The type of service chain to export.  
       **Allowed values:** `faceted`, `state`
     - `serviceName` (`string`): The service name.
@@ -183,6 +159,262 @@ Retrieves service-specific SLA metrics for the specified serice of your targeted
 - **Example:** `"Please select a target to get the metrics from."`
 
 #### ❌ 500 - Error encountered while retrieving service-specific SLA metrics
+
+- **Content-Type:** `text/plain`
+- **Example:** `"Error getting metrics: ..."`
+
+## GET `/api/sla-metrics/:target/:service_type/issuesPassingSLA`
+
+This route retrieves the list of issues that have passed their SLA compliance (both TTO and TTR) for a specified target system and service chain type. It supports optional date filtering via query parameters.
+
+### Path Parameters
+
+| Name           | Type   | Required/Optional | Description |
+|----------------|--------|-------------------|-------------|
+| `target`       | string | **Required**      | The target system to retrieve SLA metrics from. Allowed values: `"itop"`, `"redmine"` |
+| `service_type` | string | **Required**      | The type of service chain being analyzed. Allowed values: `"faceted"`, `"state"` |
+
+### Query Parameters
+
+| Name    | Type   | Required/Optional | Description |
+|---------|--------|-------------------|-------------|
+| `from`  | string | Optional          | Start date filter in ISO format (e.g., `"2024-01-01"`) |
+| `to`    | string | Optional          | End date filter in ISO format (e.g., `"2024-12-31"`) |
+
+### Responses
+
+#### ✅ 200 - Issues passing SLA returned successfully
+
+- **Content-Type:** `application/json`  
+- **Description:** A list with all issues that passed both TTO and TTR SLAs.  
+- **Example:**
+  ```json
+  [
+    {
+      "id": 123,
+      "title": "Sample Issue",
+      "tto_passed": true,
+      "ttr_passed": true
+    },
+    {
+      "id": 124,
+      "title": "Another Issue",
+      "tto_passed": true,
+      "ttr_passed": true
+    }
+  ]
+  ```
+
+#### ❌ 404 - Missing or invalid parameters
+
+- **Content-Type:** `text/plain`
+- **Example:** `"Please select a target to get the metrics from."`
+
+#### ❌ 500 - Error encountered while retrieving issues
+
+- **Content-Type:** `text/plain`
+- **Example:** `"Error getting metrics: ..."`
+
+## GET `/api/sla-metrics/:target/:service_type/issuesPassingTTO`
+
+This route retrieves the list of issues that have passed TTO for a specified target system and service chain type. It supports optional date filtering via query parameters.
+
+### Path Parameters
+
+| Name           | Type   | Required/Optional | Description |
+|----------------|--------|-------------------|-------------|
+| `target`       | string | **Required**      | The target system to retrieve SLA metrics from. Allowed values: `"itop"`, `"redmine"` |
+| `service_type` | string | **Required**      | The type of service chain being analyzed. Allowed values: `"faceted"`, `"state"` |
+
+### Query Parameters
+
+| Name    | Type   | Required/Optional | Description |
+|---------|--------|-------------------|-------------|
+| `from`  | string | Optional          | Start date filter in ISO format (e.g., `"2024-01-01"`) |
+| `to`    | string | Optional          | End date filter in ISO format (e.g., `"2024-12-31"`) |
+
+### Responses
+
+#### ✅ 200 - Issues passing TTO returned successfully
+
+- **Content-Type:** `application/json`  
+- **Description:** A list with all issues that passed TTO.  
+- **Example:**
+  ```json
+  [
+    {
+      "id": 123,
+      "title": "Sample Issue",
+      "tto_passed": true,
+      "ttr_passed": true
+    },
+    {
+      "id": 124,
+      "title": "Another Issue",
+      "tto_passed": true,
+      "ttr_passed": true
+    }
+  ]
+  ```
+
+#### ❌ 404 - Missing or invalid parameters
+
+- **Content-Type:** `text/plain`
+- **Example:** `"Please select a target to get the metrics from."`
+
+#### ❌ 500 - Error encountered while retrieving issues
+
+- **Content-Type:** `text/plain`
+- **Example:** `"Error getting metrics: ..."`
+
+
+## GET `/api/sla-metrics/:target/:service_type/issuesPassingTTR`
+
+This route retrieves the list of issues that have passed TTR for a specified target system and service chain type. It supports optional date filtering via query parameters.
+
+### Path Parameters
+
+| Name           | Type   | Required/Optional | Description |
+|----------------|--------|-------------------|-------------|
+| `target`       | string | **Required**      | The target system to retrieve SLA metrics from. Allowed values: `"itop"`, `"redmine"` |
+| `service_type` | string | **Required**      | The type of service chain being analyzed. Allowed values: `"faceted"`, `"state"` |
+
+### Query Parameters
+
+| Name    | Type   | Required/Optional | Description |
+|---------|--------|-------------------|-------------|
+| `from`  | string | Optional          | Start date filter in ISO format (e.g., `"2024-01-01"`) |
+| `to`    | string | Optional          | End date filter in ISO format (e.g., `"2024-12-31"`) |
+
+### Responses
+
+#### ✅ 200 - Issues passing TTR returned successfully
+
+- **Content-Type:** `application/json`  
+- **Description:** A list with all issues that passed TTO.  
+- **Example:**
+  ```json
+  [
+    {
+      "id": 123,
+      "title": "Sample Issue",
+      "tto_passed": true,
+      "ttr_passed": true
+    },
+    {
+      "id": 124,
+      "title": "Another Issue",
+      "tto_passed": true,
+      "ttr_passed": true
+    }
+  ]
+  ```
+
+#### ❌ 404 - Missing or invalid parameters
+
+- **Content-Type:** `text/plain`
+- **Example:** `"Please select a target to get the metrics from."`
+
+#### ❌ 500 - Error encountered while retrieving issues
+
+- **Content-Type:** `text/plain`
+- **Example:** `"Error getting metrics: ..."`
+
+## GET `/api/sla-metrics/:target/:service_type/issues`
+
+This route retrieves **all issues** that are part of the service chain defined by the given `target` system and `service_type`. It supports optional date filters via query parameters.
+
+### Path Parameters
+
+| Name           | Type   | Required/Optional | Description |
+|----------------|--------|-------------------|-------------|
+| `target`       | string | **Required**      | The system from which to retrieve issues. Allowed values: `"itop"`, `"redmine"` |
+| `service_type` | string | **Required**      | The type of service chain being analyzed. Allowed values: `"faceted"`, `"state"` |
+
+### Query Parameters
+
+| Name    | Type   | Required/Optional | Description |
+|---------|--------|-------------------|-------------|
+| `from`  | string | Optional          | Start date filter in ISO format (e.g., `"2024-01-01"`) |
+| `to`    | string | Optional          | End date filter in ISO format (e.g., `"2024-12-31"`) |
+
+### Responses
+
+#### ✅ 200 - All issues returned successfully
+
+- **Content-Type:** `application/json`  
+- **Description:** A list of all issues in the service chain for the selected system and type.  
+- **Example:**
+  ```json
+  [
+    {
+      "id": 1,
+      "title": "Login page bug",
+      "status": "Resolved"
+    },
+    {
+      "id": 2,
+      "title": "Database latency issue",
+      "status": "Open"
+    }
+  ]
+
+#### ❌ 404 - Missing or invalid parameters
+
+- **Content-Type:** `text/plain`
+- **Example:** `"Please select a target to get the metrics from."`
+
+#### ❌ 500 - Error encountered while retrieving issues
+
+- **Content-Type:** `text/plain`
+- **Example:** `"Error getting metrics: ..."`
+
+
+## GET `/api/sla-metrics/:target/:service_type/problematicOpenIssues`
+
+This route retrieves all **problematic open issues** that are part of the service chain defined by the given `target` system and `service_type`. It supports optional date filters via query parameters. ***Problematic open issues are the ones that do not pass TTO or TTR and are not closed yet.***
+
+### Path Parameters
+
+| Name           | Type   | Required/Optional | Description |
+|----------------|--------|-------------------|-------------|
+| `target`       | string | **Required**      | The system from which to retrieve issues. Allowed values: `"itop"`, `"redmine"` |
+| `service_type` | string | **Required**      | The type of service chain being analyzed. Allowed values: `"faceted"`, `"state"` |
+
+### Query Parameters
+
+| Name    | Type   | Required/Optional | Description |
+|---------|--------|-------------------|-------------|
+| `from`  | string | Optional          | Start date filter in ISO format (e.g., `"2024-01-01"`) |
+| `to`    | string | Optional          | End date filter in ISO format (e.g., `"2024-12-31"`) |
+
+### Responses
+
+#### ✅ 200 - All problematic open issues returned successfully
+
+- **Content-Type:** `application/json`  
+- **Description:** A list of all issues in the service chain for the selected system and type.  
+- **Example:**
+  ```json
+  [
+    {
+      "id": 1,
+      "title": "Login page bug",
+      "status": "Resolved"
+    },
+    {
+      "id": 2,
+      "title": "Database latency issue",
+      "status": "Open"
+    }
+  ]
+
+#### ❌ 404 - Missing or invalid parameters
+
+- **Content-Type:** `text/plain`
+- **Example:** `"Please select a target to get the metrics from."`
+
+#### ❌ 500 - Error encountered while retrieving problematic open issues
 
 - **Content-Type:** `text/plain`
 - **Example:** `"Error getting metrics: ..."`

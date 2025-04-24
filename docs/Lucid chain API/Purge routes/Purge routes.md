@@ -44,24 +44,6 @@ This route purges the database of the targeted tool (`itop` or `redmine`) based 
 |---------|--------|----------|-------------|
 | `target` | `string` | **Required** | The target database to purge. Allowed values: `"itop"`, `"redmine"` |
 
-### Request Body
-
-- **Required:** `true`
-- **Content-Type:** `application/json`
-- **Schema:**
-  - **Type:** `object`
-  - **Properties:**
-    - `server` (`string`): The server address of the target system.  
-      **Example:** "localhost"
-    - `port` (`integer`): The port of the target system.  
-      **Example:** `8080`
-    - `api_path` (`string`): The API path of the target system.  
-      **Example:** `"/api/v1"`
-    - `username` (`string`): The username for authenticating with the target system.  
-      **Example:** `"admin"`
-    - `password` (`string`): The password for authenticating with the target system.  
-      **Example:** `"password123"`
-
 ### Responses
 
 #### ✅ 200 - The specified target database was successfully purged

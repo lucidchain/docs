@@ -97,16 +97,6 @@ This route allows you to import service chains into ITop. It imports data to ITo
 - **Schema:**
   - **Type:** `object`
   - **Properties:**
-    - `server` (`string`): The server address of the iTop system.  
-      **Example:** `"localhost"`
-    - `port` (`integer`): The port of the iTop system.  
-      **Example:** `8080`
-    - `api_path` (`string`): The API path of the iTop system.  
-      **Example:** `"/webservices/rest.php"`
-    - `username` (`string`): The username for authenticating with iTop.  
-      **Example:** `"admin"`
-    - `password` (`string`): The password for authenticating with iTop.  
-      **Example:** `"password123"`
     - `fileContent` (`object`): The data to be imported into iTop.
 
 ### Responses
@@ -138,16 +128,6 @@ This route allows you to import service chains into Redmine. It imports data to 
 - **Schema:**
   - **Type:** `object`
   - **Properties:**
-    - `server` (`string`): The server address of the Redmine system.  
-      **Example:** `"localhost"`
-    - `port` (`integer`): The port of the Redmine system.  
-      **Example:** `8080`
-    - `api_path` (`string`): The API path of the Redmine system.  
-      **Example:** `"/webservices/rest.php"`
-    - `username` (`string`): The username for authenticating with Redmine.  
-      **Example:** `"admin"`
-    - `password` (`string`): The password for authenticating with Redmine.  
-      **Example:** `"password123"`
     - `fileContent` (`object`): The data to be imported into Redmine.
 
 ### Responses
