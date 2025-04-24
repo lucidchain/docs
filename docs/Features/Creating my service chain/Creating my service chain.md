@@ -29,7 +29,7 @@ authors:
 
 import Disclaimer from '@site/src/components/Disclaimer.js';
 import Alert from '@site/src/components/Alert.js';
-import LogInRequired from '@site/src/components/LoginRequired.js'
+import LogInRequired from '@site/src/components/LogInRequired.js'
 
 <LogInRequired/>
 
