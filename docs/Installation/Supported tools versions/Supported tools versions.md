@@ -25,7 +25,7 @@ keywords:
   - MySQL 5.7
   - Database recommendation
   - PhpMyAdmin
-  - PhpMyAdmin 8.2.8
+  - PhpMyAdmin 5.2.1
   - Docker-compose
   - Local environment
   - Tool testing
@@ -58,4 +58,4 @@ Lucid chain does not have a database, but for using a local Redmine we strongly 
 
 ## PhpMyAdmin
 
-In case that you want to look your Redmine database, you have available a phpMyAdmin image in local Docker-compose. ***We have only tested phpMyAdmin 8.2.8***, so we highly recommend using thatspecific version.
+In case that you want to look your Redmine database, you have available a phpMyAdmin image in local Docker-compose. ***We have only tested phpMyAdmin 5.2.1***, so we highly recommend using thatspecific version.

@@ -123,7 +123,7 @@ If you are interested in having your own Lucid chain in local, and have access t
     :::
 
     <div align="center">
-    ![Run in local](/img/installation/runningLocally.png)  
+    ![Run in local](/img/installation/runningLocally1.4.png)  
     **Figure 2:** *Lucid chain installed running locally.*
     </div>
 
