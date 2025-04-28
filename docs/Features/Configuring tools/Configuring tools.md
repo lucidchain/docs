@@ -75,9 +75,16 @@ Once REST Services and administrator profiles have been given to your user, you 
 
 Here we show an example **assuming** that we have an ITop listening in **localhost:8000** and that our user credentials are **user:"admin" pwd:"admin"**.
 
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
 <div align="center">
 ![ITop form](/img/configuration/ITopForm.png)  
-**Figure 2:** *Example of ITop configuration in localhost.*
+**Figure 2:** *Example of ITop configuration in localhost running Lucid chain locally.*
+</div>
+
+<div align="center">
+![ITop form docker](/img/configuration/iTopFormDocker.png)  
+**Figure 3:** *Example of ITop configuration in localhost running Lucid chain in Docker.*
+</div>
 </div>
 
 ## Configuring Redmine
@@ -117,9 +124,16 @@ Aditionally, you will need to configure your Redmine's Database connection filli
 
 Here we show an example **assuming** that we have an **Redmine** listening in **localhost:8080** and that our user credentials are **user:"admin" pwd:"admin"**. We also **assume** that we have a database in **localhost:3307** and an user with credentials **user: root pwd: root** with CRUD privileges for a database named **"Redmine"**, which is our Redmine's database.
 
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
 <div align="center">
 ![Redmine form](/img/configuration/RedmineForm.png)  
-**Figure 3:** *Example of Redmine configuration in localhost.*
+**Figure 4:** *Example of Redmine configuration in localhost running Lucid chain locally.*
+</div>
+
+<div align="center">
+![Redmine form docker](/img/configuration/redmineFormDocker.png)  
+**Figure 5:** *Example of Redmine configuration in localhost running Lucid chain in Docker.*
+</div>
 </div>
 
 ## Save configuraion
@@ -128,7 +142,7 @@ You can save this configuration by clicking of ***"Save"*** button. This will sa
 
 <div align="center">
 ![Saving configuration](/img/configuration/savedButton.png)  
-**Figure 4:** *Configuration saving confirmation.*
+**Figure 6:** *Configuration saving confirmation.*
 </div>
 
 <Disclaimer>
@@ -137,5 +151,5 @@ In future versions you will be able to delete the configuration from Lucid chain
 
 <div align="center">
 ![Connected tools](/img/configuration/connected.png)  
-**Figure 5:** *Lucid chain connected to ITop and Redmine.*
+**Figure 7:** *Lucid chain connected to ITop and Redmine.*
 </div>
