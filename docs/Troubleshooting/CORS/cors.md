@@ -86,11 +86,8 @@ This will fix the issue because all enviroment variables ***MUST*** start with *
 After that, please make sure you have the correct configuration in your backend enviroment variables. Check that your .env in back looks like this:
 
 ```.env
-LUCID_USERNAME=admin
-LUCID_PASSWORD=admin
 LOG_LEVEL=info  ## LOG_LEVEL CAN BE: error > warn >  info > verbose > debug > silly
 NUM_DECIMALS=2  ## 2 is the recomended. The maximum is 5. More than that doesn't make sense
-APP_MODE=dev    ## APP_MODE can be dev or prd. In dev you dont need authentication, but in prod u do!
 ```
 
 </Disclaimer>
