@@ -82,7 +82,7 @@ Here we show an example **assuming** that we have an ITop listening in **localho
 </div>
 
 <div align="center">
-![ITop form docker](/img/configuration/iTopFormDocker.png)  
+![ITop form docker](/img/configuration/itopFormDocker.png)  
 **Figure 3:** *Example of ITop configuration in localhost running Lucid chain in Docker.*
 </div>
 </div>
