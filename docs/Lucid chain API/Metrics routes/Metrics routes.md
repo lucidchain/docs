@@ -462,3 +462,57 @@ This route retrieves all **problematic open issues** that are part of the servic
 
 - **Content-Type:** `text/plain`
 - **Example:** `"Error getting metrics: ..."`
+
+## GET `/api/sla-metrics/:target/:service_type/openIssues`
+
+This route retrieves all **open issues** that are part of the service chain defined by the given `target` system and `service_type`. It supports optional date filters via query parameters.
+
+### Security
+
+- **Authorization**: `Bearer Token`
+- **Required**: Yes
+
+### Path Parameters
+
+| Name           | Type   | Required/Optional | Description |
+|----------------|--------|-------------------|-------------|
+| `target`       | string | **Required**      | The system from which to retrieve issues. Allowed values: `"itop"`, `"redmine"` |
+| `service_type` | string | **Required**      | The type of service chain being analyzed. Allowed values: `"faceted"`, `"state"` |
+
+### Query Parameters
+
+| Name    | Type   | Required/Optional | Description |
+|---------|--------|-------------------|-------------|
+| `from`  | string | Optional          | Start date filter in ISO format (e.g., `"2024-01-01"`) |
+| `to`    | string | Optional          | End date filter in ISO format (e.g., `"2024-12-31"`) |
+
+### Responses
+
+#### ✅ 200 - All open issues returned successfully
+
+- **Content-Type:** `application/json`  
+- **Description:** A list of all issues in the service chain for the selected system and type.  
+- **Example:**
+  ```json
+  [
+    {
+      "id": 1,
+      "title": "Login page bug",
+      "status": "Resolved"
+    },
+    {
+      "id": 2,
+      "title": "Database latency issue",
+      "status": "Open"
+    }
+  ]
+
+#### ❌ 404 - Missing or invalid parameters
+
+- **Content-Type:** `text/plain`
+- **Example:** `"Please select a target to get the metrics from."`
+
+#### ❌ 500 - Error encountered while retrieving open issues
+
+- **Content-Type:** `text/plain`
+- **Example:** `"Error getting metrics: ..."`
